@@ -14,31 +14,48 @@ jobs:
         image_tag:
           # docker
           - { image: "advplyr/audiobookshelf", tag: "latest" }
-          - { image: "akimio/autofilm", tag: ["DEV", "latest"] }
+          - { image: "akimio/autofilm", tag: "DEV" }
+          - { image: "akimio/autofilm", tag: "latest" }
           - { image: "akimio/mediawarp", tag: "latest" }
           - { image: "allanpk716/chinesesubfinder", tag: "latest" }
           - { image: "chigusa/bililive-go", tag: "latest" }
           - { image: "cloudnas/clouddrive2", tag: "latest" }
           - { image: "containrrr/watchtower", tag: "latest" }
-          - { image: "deluan/navidrome", tag: ["develop", "latest"] }
-          - { image: "difegue/lanraragi", tag: ["latest", "nightly"] }
-          - { image: "diygod/rsshub", tag: ["chromium-bundled", "latest"] }
-          - { image: "dreamacro/clash", tag: ["dev", "latest"] }
-          - { image: "emby/embyserver", tag: ["4.8.11.0", "4.9.0.43", "beta", "latest"] }
+          - { image: "deluan/navidrome", tag: "develop" }
+          - { image: "deluan/navidrome", tag: "latest" }
+          - { image: "difegue/lanraragi", tag: "latest" }
+          - { image: "difegue/lanraragi", tag: "nightly" }
+          - { image: "diygod/rsshub", tag: "chromium-bundled" }
+          - { image: "diygod/rsshub", tag: "latest" }
+          - { image: "dreamacro/clash", tag: "dev" }
+          - { image: "dreamacro/clash", tag: "latest" }
+          - { image: "emby/embyserver", tag: "4.8.11.0" }
+          - { image: "emby/embyserver", tag: "4.9.0.43" }
+          - { image: "emby/embyserver", tag: "beta" }
+          - { image: "emby/embyserver", tag: "latest" }
           - { image: "embykeeper/embykeeper", tag: "latest" }
           - { image: "estrellaxd/auto_bangumi", tag: "latest" }
           - { image: "excalidraw/excalidraw", tag: "latest" }
-          - { image: "fallenbagel/jellyseerr", tag: ["develop", "latest"] }
+          - { image: "fallenbagel/jellyseerr", tag: "develop" }
+          - { image: "fallenbagel/jellyseerr", tag: "latest" }
           - { image: "flaresolverr/flaresolverr", tag: "latest" }
-          - { image: "gethomepage/homepage", tag: ["dev", "latest", "main", "nightly"] }
+          - { image: "gethomepage/homepage", tag: "dev" }
+          - { image: "gethomepage/homepage", tag: "latest" }
+          - { image: "gethomepage/homepage", tag: "main" }
+          - { image: "gethomepage/homepage", tag: "nightly" }
           - { image: "gdy666/lucky", tag: "latest" }
           - { image: "gotson/komga", tag: "latest" }
           - { image: "h55205l/ffandown", tag: "latest" }
           - { image: "haishanh/yacd", tag: "master" }
-          - { image: "hanxi/xiaomusic", tag: ["latest", "main", "stable"] }
+          - { image: "hanxi/xiaomusic", tag: "latest" }
+          - { image: "hanxi/xiaomusic", tag: "main" }
+          - { image: "hanxi/xiaomusic", tag: "stable" }
           - { image: "hectorqin/reader", tag: "latest" }
           - { image: "helloz/onenav", tag: "latest" }
-          - { image: "homeassistant/home-assistant", tag: ["beta", "dev", "latest", "stable"] }
+          - { image: "homeassistant/home-assistant", tag: "beta" }
+          - { image: "homeassistant/home-assistant", tag: "dev" }
+          - { image: "homeassistant/home-assistant", tag: "latest" }
+          - { image: "homeassistant/home-assistant", tag: "stable" }
           - { image: "hotio/readarr", tag: "latest" }
           - { image: "hotio/whisparr", tag: "latest" }
           - { image: "hslr/sun-panel", tag: "latest" }
@@ -46,47 +63,65 @@ jobs:
           - { image: "imsyy/splayer", tag: "latest" }
           - { image: "itefuir/alist-strm", tag: "latest" }
           - { image: "iyuucn/iyuuplus", tag: "latest" }
-          - { image: "jellyfin/jellyfin", tag: ["latest", "unstable"] }
+          - { image: "jellyfin/jellyfin", tag: "latest" }
+          - { image: "jellyfin/jellyfin", tag: "unstable" }
           - { image: "jxxghp/moviepilot", tag: "latest" }
           - { image: "jxxghp/moviepilot-v2", tag: "latest" }
           - { image: "len996/115bot", tag: "latest" }
-          - { image: "linuxserver/bazarr", tag: ["development", "latest"] }
+          - { image: "linuxserver/bazarr", tag: "development" }
+          - { image: "linuxserver/bazarr", tag: "latest" }
           - { image: "linuxserver/heimdall", tag: "latest" }
           - { image: "linuxserver/jackett", tag: "latest" }
           - { image: "linuxserver/jellyfin", tag: "latest" }
           - { image: "linuxserver/lidarr", tag: "latest" }
-          - { image: "linuxserver/overseerr", tag: ["develop", "latest"] }
+          - { image: "linuxserver/overseerr", tag: "develop" }
+          - { image: "linuxserver/overseerr", tag: "latest" }
           - { image: "linuxserver/plex", tag: "latest" }
           - { image: "linuxserver/prowlarr", tag: "latest" }
           - { image: "linuxserver/qbittorrent", tag: "latest" }
           - { image: "linuxserver/radarr", tag: "latest" }
           - { image: "linuxserver/sonarr", tag: "latest" }
-          - { image: "linuxserver/transmission", tag: ["4.0.5", "latest"] }
+          - { image: "linuxserver/transmission", tag: "4.0.5" }
+          - { image: "linuxserver/transmission", tag: "latest" }
           - { image: "lswl/vertex", tag: "latest" }
-          - { image: "mdcng/mdc", tag: ["beta", "latest"] }
-          - { image: "metacubex/mihomo", tag: ["Alpha", "latest"] }
+          - { image: "mdcng/mdc", tag: "beta" }
+          - { image: "mdcng/mdc", tag: "latest" }
+          - { image: "metacubex/mihomo", tag: "Alpha" }
+          - { image: "metacubex/mihomo", tag: "latest" }
           - { image: "mysql", tag: "latest" }
           - { image: "nyanmisaka/jellyfin", tag: "latest" }
-          - { image: "p3terx/aria2-pro", tag: ["latest", "test"] }
-          - { image: "p3terx/ariang", tag: ["latest", "test"] }
-          - { image: "qdtoday/qd", tag: ["dev", "latest"] }
-          - { image: "redis", tag: ["alpine", "latest"] }
+          - { image: "p3terx/aria2-pro", tag: "latest" }
+          - { image: "p3terx/aria2-pro", tag: "test" }
+          - { image: "p3terx/ariang", tag: "latest" }
+          - { image: "p3terx/ariang", tag: "test" }
+          - { image: "qdtoday/qd", tag: "dev" }
+          - { image: "qdtoday/qd", tag: "latest" }
+          - { image: "redis", tag: "alpine" }
+          - { image: "redis", tag: "latest" }
           - { image: "saintvamp/auto_dtu", tag: "latest" }
           - { image: "saintvamp/auto_rss", tag: "latest" }
           - { image: "shenxianmq/auto_symlink", tag: "latest" }
           - { image: "shenxianmq/symedia", tag: "latest" }
           - { image: "soulter/astrbot", tag: "latest" }
           - { image: "stainless403/mdcx-src-gui-base", tag: "latest" }
-          - { image: "stirlingtools/stirling-pdf", tag: ["alpha", "latest","latest-fat"] }
-          - { image: "superng6/aria2", tag: ["a2b-latest", "latest"] }
+          - { image: "stirlingtools/stirling-pdf", tag: "alpha" }
+          - { image: "stirlingtools/stirling-pdf", tag: "latest" }
+          - { image: "stirlingtools/stirling-pdf", tag: "latest-fat" }
+          - { image: "superng6/aria2", tag: "a2b-latest" }
+          - { image: "superng6/aria2", tag: "latest" }
           - { image: "superng6/subfinder", tag: "latest" }
           - { image: "suwmlee/ikaros", tag: "latest" }
-          - { image: "synctvorg/synctv", tag: ["latest", "main"] }
-          - { image: "tinymediamanager/tinymediamanager", tag: ["5.1.1", "latest"] }
-          - { image: "whyour/qinglong", tag: ["develop", "latest"] }
+          - { image: "synctvorg/synctv", tag: "latest" }
+          - { image: "synctvorg/synctv", tag: "main" }
+          - { image: "tinymediamanager/tinymediamanager", tag: "5.1.1" }
+          - { image: "tinymediamanager/tinymediamanager", tag: "latest" }
+          - { image: "whyour/qinglong", tag: "develop" }
+          - { image: "whyour/qinglong", tag: "latest" }
           - { image: "wushuo894/ani-rss", tag: "latest" }
-          - { image: "xhofe/alist", tag: ["beta", "latest"] }
-          - { image: "xhongc/music_tag_web", tag: ["1.2.7", "latest"] }
+          - { image: "xhofe/alist", tag: "beta" }
+          - { image: "xhofe/alist", tag: "latest" }
+          - { image: "xhongc/music_tag_web", tag: "1.2.7" }
+          - { image: "xhongc/music_tag_web", tag: "latest" }
           - { image: "xiaoyi510/xarr-rss", tag: "latest" }
           - { image: "yilee01/mihomo-yacd", tag: "latest" }
           - { image: "youshandefeiyang/allinone", tag: "latest" }
