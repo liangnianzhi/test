@@ -96,8 +96,6 @@ jobs:
           # 创建./digests文件夹，将steps.get-digest.outputs.digest存入./digests/digests.txt
           mkdir -p ./digests
           echo "${{ steps.get-digest.outputs.digest }}" > ./digests/digests.txt
-          echo "${{ secrets.DOCKER_USER }}"
-          echo "${{ secrets.DOCKER_PWD }}"
           # 动态生成镜像路径
           # image_name=$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
           # image_author=$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
@@ -160,19 +158,19 @@ jobs:
         if: steps.mirror-image.outcome == 'success' # 仅在mirror-image步骤成功，skopeo copy 成功时执行元数据同步：
         env:
           # DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
-          image_name: $(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
-          image_author: $(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
+          # image_name: $(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
+          # image_author: $(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
           # DOCKER_USER: ${{ secrets.DOCKER_USER }}
           # DOCKER_PWD: ${{ secrets.DOCKER_PWD }}
           
         run: |
           # 获取源镜像元数据（包含description和full_description）
-          RESPONSE=$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")
+          # RESPONSE=$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")
 
           # 提取并处理Markdown内容（示例：转换相对链接）
-          DESCRIPTION=$(echo "$RESPONSE" | jq -r '.description')
+          # DESCRIPTION=$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.description')
           # OVERVIEW=$(echo "$RESPONSE" | jq -r '.full_description' | sed 's|(\/|(https://github.com/${{ matrix.image_tag.image }}/raw/main/|g')  # 路径转换
-          FULL_DESCRIPTION=$(echo "$RESPONSE" | jq -r '.full_description')  # 路径转换
+          # FULL_DESCRIPTION=$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.full_description')  # 路径转换
           
           # 定义变量与转义 # 暂时不需要转义也可识别
           # 转义 DESCRIPTION（单行短文本）
@@ -183,17 +181,17 @@ jobs:
           
           # 构造 JSON Payload # 暂时不需要赋值转义参数
           # PAYLOAD=$(jq -n --arg desc "$DESCRIPTION_JSON" --arg full "$FULL_DESCRIPTION_JSON" '{description: $desc, full_description: $full}')
-          PAYLOAD=$(jq -n --arg desc "$DESCRIPTION" --arg full "$FULL_DESCRIPTION" '{description: $desc, full_description: $full}')
+          # PAYLOAD=$(jq -n --arg desc "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.description')" --arg full "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.full_description')" '{description: $desc, full_description: $full}')
           
           # 获取JWT ${TOKEN}登录dockerhub得到修改元数据的权限
           # TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "${{ env.DOCKER_USER }}", "password": "${{ env.DOCKER_PWD }}"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
-          TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'"${{ secrets.DOCKER_USER }}"'", "password": "'"${{ secrets.DOCKER_PWD }}"'"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
+          # TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "${{ secrets.DOCKER_USER }}", "password": "${{ secrets.DOCKER_PWD }}"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
 
           # 调试输出
           # echo "${{ env.image_author }}"
           # echo "$FULL_DESCRIPTION"
 
           # 更新目标仓库元数据
-          curl -X PATCH -H "Authorization: JWT ${TOKEN}" -H "Content-Type: application/json" "https://hub.docker.com/v2/repositories/liangnianzhi/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')/" -d "$PAYLOAD"
+          curl -X PATCH -H "Authorization: JWT $(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "${{ secrets.DOCKER_USER }}", "password": "${{ secrets.DOCKER_PWD }}"}' https://hub.docker.com/v2/users/login/ | jq -r .token)" -H "Content-Type: application/json" "https://hub.docker.com/v2/repositories/liangnianzhi/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')/" -d "$(jq -n --arg desc "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.description')" --arg full "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.full_description')" '{description: $desc, full_description: $full}')"
           # curl -X PATCH -H "Authorization: JWT ${TOKEN}" -H "Content-Type: application/json" "https://hub.docker.com/v2/repositories/liangnianzhi/${{ env.image_name }}.${{ env.image_author }}/" -d "{\"description\": \"$DESCRIPTION_JSON\", \"full_description\": \"$FULL_DESCRIPTION_JSON\"}"
           # curl -XPATCH -H "Authorization: Bearer ${{ env.DOCKERHUB_TOKEN }}" -H "Content-Type: application/json" "https://hub.docker.com/v2/repositories/liangnianzhi/${{ env.IMAGE_NAME }}/" -d @- <<EOF { "description": "$DESCRIPTION", "full_description": "$OVERVIEW" } EOF
