@@ -34,5 +34,6 @@ jobs:
           echo "digest=$digest" >> $GITHUB_OUTPUT
           echo "$digest"
           echo "$digest_images"
-          echo "$last_pushed"
+          echo "last_pushed_date=${{ replace( split(last_pushed, 'T')[0], '-', '') }}" >> $GITHUB_OUTPUT
+          echo "$last_pushed_date"
           echo "$last_pushed_images"
