@@ -156,7 +156,7 @@ jobs:
       - name: Sync Metadata to Docker
         # if: steps.cache-check.outputs.cache-hit != 'true' # 注释即使镜像不更新也更新description和full_description
         if: steps.mirror-image.outcome == 'success' # 仅在mirror-image步骤成功，skopeo copy 成功时执行元数据同步：
-        env:
+        # env:
           # DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
           # image_name: $(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
           # image_author: $(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
