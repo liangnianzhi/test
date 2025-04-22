@@ -1,8 +1,8 @@
 name: Multi-Image Sync to Private Registry via Skopeo
 
 on:
-  schedule:
-    - cron: '0 4,10,16,22 * * *'  # UTC 16:00 对应北京时间 00:00
+  # schedule:
+    # - cron: '0 4,10,16,22 * * *'  # UTC 16:00 对应北京时间 00:00
   workflow_dispatch:
 
 jobs:
@@ -132,8 +132,12 @@ jobs:
       max-parallel: 2
       fail-fast: false
     steps:
-      - name: Install jq
-        run: sudo apt install -y jq
+      - name: Setup Skopeo
+        run: |
+          wget https://github.com/lework/skopeo-binary/releases/download/v1.18.0/skopeo-linux-amd64 # 需跟随项目更新
+          sudo mv skopeo-linux-amd64 /usr/bin/skopeo
+          sudo chmod +x /usr/bin/skopeo
+          sudo apt install -y jq
       - name: Fetch image digest
         id: get-digest
         run: |
@@ -147,7 +151,6 @@ jobs:
           path: ./digests/digests.txt
           key: ${{ runner.os }}-${{ matrix.image_tag.image }}-${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.digest }}
       - name: Mirror image
-        uses: containers/skopeo-action@v2
         id: mirror-image
         if: steps.cache-check.outputs.cache-hit != 'true'
         env:
