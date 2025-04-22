@@ -96,7 +96,8 @@ jobs:
           # 创建./digests文件夹，将steps.get-digest.outputs.digest存入./digests/digests.txt
           mkdir -p ./digests
           echo "${{ steps.get-digest.outputs.digest }}" > ./digests/digests.txt
-          
+          echo "${{ secrets.DOCKER_USER }}"
+          echo "${{ secrets.DOCKER_PWD }}"
           # 动态生成镜像路径
           # image_name=$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
           # image_author=$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
