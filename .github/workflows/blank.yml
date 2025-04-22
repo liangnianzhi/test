@@ -130,6 +130,7 @@ jobs:
             skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} ghcr.io -u ${{ github.actor }} -p ${{ secrets.API_TOKEN }}
           else
             skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PWD }}
+          fi
           retry_count=0
           max_retries=3
           until [ $retry_count -ge $max_retries ]
