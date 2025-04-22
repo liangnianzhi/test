@@ -133,11 +133,9 @@ jobs:
       fail-fast: false
     steps:
       - name: Setup Skopeo
-        run: |
-          wget https://github.com/lework/skopeo-binary/releases/download/v1.18.0/skopeo-linux-amd64 # 需跟随项目更新
-          sudo mv skopeo-linux-amd64 /usr/bin/skopeo
-          sudo chmod +x /usr/bin/skopeo
-          sudo apt install -y jq
+        uses: containers/skopeo-action@v2
+      - name: Install jq
+        run: sudo apt install -y jq
       - name: Fetch image digest
         id: get-digest
         run: |
