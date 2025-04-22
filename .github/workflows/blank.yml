@@ -38,4 +38,4 @@ jobs:
           echo "$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')"
           # echo "$last_pushed_images"
           echo "tag_last_pushed_date=$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')" >> $GITHUB_OUTPUT
-          echo "test-$steps.get-digest.outputs.tag_last_pushed_date"
+          echo "test-${{ steps.get-digest.outputs.tag_last_pushed_date }}"
