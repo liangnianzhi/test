@@ -132,8 +132,6 @@ jobs:
       max-parallel: 2
       fail-fast: false
     steps:
-      - name: Setup Skopeo
-        uses: containers/skopeo-action@v2
       - name: Install jq
         run: sudo apt install -y jq
       - name: Fetch image digest
@@ -149,6 +147,7 @@ jobs:
           path: ./digests/digests.txt
           key: ${{ runner.os }}-${{ matrix.image_tag.image }}-${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.digest }}
       - name: Mirror image
+        uses: containers/skopeo-action@v2
         id: mirror-image
         if: steps.cache-check.outputs.cache-hit != 'true'
         env:
