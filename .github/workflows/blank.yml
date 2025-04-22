@@ -27,13 +27,13 @@ jobs:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
           API_URL="https://hub.docker.com/v2/repositories/emby/embyserver/tags/4.9.0.43"
-          digest=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.digest')
-          digest_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].digest')
-          last_pushed=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')
-          last_pushed_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].last_pushed')
-          last_pushed_date=$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')
+          # digest=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.digest')
+          # digest_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].digest')
+          # last_pushed=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')
+          # last_pushed_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].last_pushed')
+          # last_pushed_date=$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')
           echo "digest=$digest" >> $GITHUB_OUTPUT
-          echo "$digest"
-          echo "$digest_images"
-          echo "$last_pushed_date"
-          echo "$last_pushed_images"
+          echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.digest')"
+          # echo "$digest_images"
+          echo "$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')"
+          # echo "$last_pushed_images"
