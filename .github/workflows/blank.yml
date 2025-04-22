@@ -31,7 +31,7 @@ jobs:
           digest_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].digest')
           last_pushed=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')
           last_pushed_images=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.images[].last_pushed')
-          last_pushed_date=$(echo "$last_pushed" | cut -d'T' -f1 | tr -d '-')
+          last_pushed_date=$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')
           echo "digest=$digest" >> $GITHUB_OUTPUT
           echo "$digest"
           echo "$digest_images"
