@@ -23,7 +23,7 @@ jobs:
     env:
       SOURCE_REGISTRY: "docker://docker.io"
       TARGET_REGISTRY: "docker://${{ matrix.registry_target }}"
-
+    environment: production
     steps:
       # ---------------------
       # 阶段1：环境初始化
