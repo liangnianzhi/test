@@ -126,10 +126,10 @@ jobs:
           echo "${{ steps.get-digest.outputs.digest }}" > ./digests/digests.txt
           image_name=$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
           image_author=$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')
-          if [[ "${{ matrix.image_tag.image }}" != ghcr.io/* ]]; then
-            skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PWD }}
-          else
+          if [[ "${{ matrix.image_tag.image }}" == ghcr.io/* ]]; then
             skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} ghcr.io -u ${{ github.actor }} -p ${{ secrets.API_TOKEN }}
+          else
+            skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PWD }}
           retry_count=0
           max_retries=3
           until [ $retry_count -ge $max_retries ]
