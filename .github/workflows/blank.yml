@@ -12,12 +12,14 @@ jobs:
     strategy:
       matrix:
         image_tag:
-          # docker
+          # docker # iamge_number: 81, tag_number: 117
           - { image: "advplyr/audiobookshelf", tag: "latest" }
           - { image: "akimio/autofilm", tag: "DEV" }
           - { image: "akimio/autofilm", tag: "latest" }
           - { image: "akimio/mediawarp", tag: "latest" }
           - { image: "allanpk716/chinesesubfinder", tag: "latest" }
+          - { image: "amilys/embyserver", tag: "beta" }
+          - { image: "amilys/embyserver", tag: "latest" }
           - { image: "chigusa/bililive-go", tag: "latest" }
           - { image: "cloudnas/clouddrive2", tag: "latest" }
           - { image: "containrrr/watchtower", tag: "latest" }
@@ -123,6 +125,8 @@ jobs:
           - { image: "xhongc/music_tag_web", tag: "1.2.7" }
           - { image: "xhongc/music_tag_web", tag: "latest" }
           - { image: "xiaoyi510/xarr-rss", tag: "latest" }
+          - { image: "xinjiawei1/emby_unlockd", tag: "beta" }
+          - { image: "xinjiawei1/emby_unlockd", tag: "latest" }
           - { image: "yilee01/mihomo-yacd", tag: "latest" }
           - { image: "youshandefeiyang/allinone", tag: "latest" }
           - { image: "zerotier/zerotier", tag: "latest" }
