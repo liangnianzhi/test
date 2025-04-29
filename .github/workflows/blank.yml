@@ -136,11 +136,8 @@ jobs:
       max-parallel: 2
       fail-fast: false
     steps:
-      - name: Setup Skopeo
+      - name: Setup jq
         run: |
-          wget https://github.com/lework/skopeo-binary/releases/download/v1.18.0/skopeo-linux-amd64 # 需跟随项目更新
-          sudo mv skopeo-linux-amd64 /usr/bin/skopeo
-          sudo chmod +x /usr/bin/skopeo
           sudo apt install -y jq
       - name: Fetch image digest
         id: get-digest
@@ -154,6 +151,12 @@ jobs:
         with:
           path: ./digests/digests.txt
           key: ${{ runner.os }}-${{ matrix.image_tag.image }}-${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.digest }}
+      - name: Setup Skopeo
+        if: steps.cache-check.outputs.cache-hit != 'true'
+        run: |
+          wget https://github.com/lework/skopeo-binary/releases/download/v1.18.0/skopeo-linux-amd64 # 需跟随项目更新
+          sudo mv skopeo-linux-amd64 /usr/bin/skopeo
+          sudo chmod +x /usr/bin/skopeo
       - name: Mirror image
         id: mirror-image
         if: steps.cache-check.outputs.cache-hit != 'true'
