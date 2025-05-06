@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         image_tag:
-          # docker # iamge_number: 82, tag_number: 119
+          # docker # iamge_number: 83, tag_number: 120
           - { image: "advplyr/audiobookshelf", tag: "latest" }
           - { image: "akimio/autofilm", tag: "DEV" }
           - { image: "akimio/autofilm", tag: "latest" }
@@ -37,6 +37,7 @@ jobs:
           - { image: "emby/embyserver", tag: "latest" }
           - { image: "embykeeper/embykeeper", tag: "latest" }
           - { image: "estrellaxd/auto_bangumi", tag: "latest" }
+          - { image: "evanqu/jellyfin-library-poster", tag: "latest" }
           - { image: "excalidraw/excalidraw", tag: "latest" }
           - { image: "fallenbagel/jellyseerr", tag: "develop" }
           - { image: "fallenbagel/jellyseerr", tag: "latest" }
