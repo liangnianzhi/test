@@ -1,0 +1,195 @@
+name: Multi-Image Sync to Private Registry via Skopeo
+
+on:
+  schedule:
+    - cron: '0 4,10,16,22 * * *'  # UTC 16:00 对应北京时间 00:00
+  workflow_dispatch:
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+    environment: test
+    strategy:
+      matrix:
+        image_tag:
+          # docker # iamge_number: 83, tag_number: 120
+          - { image: "advplyr/audiobookshelf", tag: "latest" }
+          - { image: "akimio/autofilm", tag: "DEV" }
+          - { image: "akimio/autofilm", tag: "latest" }
+          - { image: "akimio/mediawarp", tag: "latest" }
+          - { image: "allanpk716/chinesesubfinder", tag: "latest" }
+          - { image: "amilys/embyserver", tag: "beta" }
+          - { image: "amilys/embyserver", tag: "latest" }
+          - { image: "chigusa/bililive-go", tag: "latest" }
+          - { image: "cloudnas/clouddrive2", tag: "latest" }
+          - { image: "containrrr/watchtower", tag: "latest" }
+          - { image: "deluan/navidrome", tag: "develop" }
+          - { image: "deluan/navidrome", tag: "latest" }
+          - { image: "difegue/lanraragi", tag: "latest" }
+          - { image: "difegue/lanraragi", tag: "nightly" }
+          - { image: "diygod/rsshub", tag: "chromium-bundled" }
+          - { image: "diygod/rsshub", tag: "latest" }
+          - { image: "dreamacro/clash", tag: "dev" }
+          - { image: "dreamacro/clash", tag: "latest" }
+          - { image: "emby/embyserver", tag: "4.8.11.0" }
+          - { image: "emby/embyserver", tag: "4.9.0.48" }
+          - { image: "emby/embyserver", tag: "beta" }
+          - { image: "emby/embyserver", tag: "latest" }
+          - { image: "embykeeper/embykeeper", tag: "latest" }
+          - { image: "estrellaxd/auto_bangumi", tag: "latest" }
+          - { image: "evanqu/jellyfin-library-poster", tag: "latest" }
+          - { image: "excalidraw/excalidraw", tag: "latest" }
+          - { image: "fallenbagel/jellyseerr", tag: "develop" }
+          - { image: "fallenbagel/jellyseerr", tag: "latest" }
+          - { image: "flaresolverr/flaresolverr", tag: "latest" }
+          - { image: "gethomepage/homepage", tag: "dev" }
+          - { image: "gethomepage/homepage", tag: "latest" }
+          - { image: "gethomepage/homepage", tag: "main" }
+          - { image: "gethomepage/homepage", tag: "nightly" }
+          - { image: "gdy666/lucky", tag: "latest" }
+          - { image: "gotson/komga", tag: "latest" }
+          - { image: "h55205l/ffandown", tag: "latest" }
+          - { image: "haishanh/yacd", tag: "master" }
+          - { image: "hanxi/xiaomusic", tag: "latest" }
+          - { image: "hanxi/xiaomusic", tag: "main" }
+          - { image: "hanxi/xiaomusic", tag: "stable" }
+          - { image: "hectorqin/reader", tag: "latest" }
+          - { image: "helloz/onenav", tag: "latest" }
+          - { image: "homeassistant/home-assistant", tag: "beta" }
+          - { image: "homeassistant/home-assistant", tag: "dev" }
+          - { image: "homeassistant/home-assistant", tag: "latest" }
+          - { image: "homeassistant/home-assistant", tag: "stable" }
+          - { image: "hotio/readarr", tag: "latest" }
+          - { image: "hotio/whisparr", tag: "latest" }
+          - { image: "hslr/sun-panel", tag: "latest" }
+          - { image: "hsuyelin/nas-tools", tag: "latest" }
+          - { image: "imsyy/splayer", tag: "latest" }
+          - { image: "itefuir/alist-strm", tag: "latest" }
+          - { image: "iyuucn/iyuuplus", tag: "latest" }
+          - { image: "jellyfin/jellyfin", tag: "latest" }
+          - { image: "jellyfin/jellyfin", tag: "unstable" }
+          - { image: "jxxghp/moviepilot", tag: "latest" }
+          - { image: "jxxghp/moviepilot-v2", tag: "latest" }
+          - { image: "len996/115bot", tag: "latest" }
+          - { image: "linuxserver/bazarr", tag: "development" }
+          - { image: "linuxserver/bazarr", tag: "latest" }
+          - { image: "linuxserver/heimdall", tag: "latest" }
+          - { image: "linuxserver/jackett", tag: "latest" }
+          - { image: "linuxserver/jellyfin", tag: "latest" }
+          - { image: "linuxserver/lidarr", tag: "latest" }
+          - { image: "linuxserver/overseerr", tag: "develop" }
+          - { image: "linuxserver/overseerr", tag: "latest" }
+          - { image: "linuxserver/plex", tag: "latest" }
+          - { image: "linuxserver/prowlarr", tag: "latest" }
+          - { image: "linuxserver/qbittorrent", tag: "latest" }
+          - { image: "linuxserver/radarr", tag: "latest" }
+          - { image: "linuxserver/sonarr", tag: "latest" }
+          - { image: "linuxserver/transmission", tag: "4.0.5" }
+          - { image: "linuxserver/transmission", tag: "latest" }
+          - { image: "lswl/vertex", tag: "latest" }
+          - { image: "mdcng/mdc", tag: "beta" }
+          - { image: "mdcng/mdc", tag: "latest" }
+          - { image: "metacubex/mihomo", tag: "Alpha" }
+          - { image: "metacubex/mihomo", tag: "latest" }
+          - { image: "mysql", tag: "latest" }
+          - { image: "nyanmisaka/jellyfin", tag: "latest" }
+          - { image: "p3terx/aria2-pro", tag: "latest" }
+          - { image: "p3terx/aria2-pro", tag: "test" }
+          - { image: "p3terx/ariang", tag: "latest" }
+          - { image: "p3terx/ariang", tag: "test" }
+          - { image: "qdtoday/qd", tag: "dev" }
+          - { image: "qdtoday/qd", tag: "latest" }
+          - { image: "redis", tag: "alpine" }
+          - { image: "redis", tag: "latest" }
+          - { image: "saintvamp/auto_dtu", tag: "latest" }
+          - { image: "saintvamp/auto_rss", tag: "latest" }
+          - { image: "shenxianmq/auto_symlink", tag: "latest" }
+          - { image: "shenxianmq/symedia", tag: "latest" }
+          - { image: "soulter/astrbot", tag: "latest" }
+          - { image: "stainless403/mdcx-src-gui-base", tag: "latest" }
+          - { image: "stirlingtools/stirling-pdf", tag: "alpha" }
+          - { image: "stirlingtools/stirling-pdf", tag: "latest" }
+          - { image: "stirlingtools/stirling-pdf", tag: "latest-fat" }
+          - { image: "superng6/aria2", tag: "a2b-latest" }
+          - { image: "superng6/aria2", tag: "latest" }
+          - { image: "superng6/subfinder", tag: "latest" }
+          - { image: "suwmlee/ikaros", tag: "latest" }
+          - { image: "synctvorg/synctv", tag: "latest" }
+          - { image: "synctvorg/synctv", tag: "main" }
+          - { image: "tinymediamanager/tinymediamanager", tag: "5.1.1" }
+          - { image: "tinymediamanager/tinymediamanager", tag: "latest" }
+          - { image: "whyour/qinglong", tag: "develop" }
+          - { image: "whyour/qinglong", tag: "latest" }
+          - { image: "wushuo894/ani-rss", tag: "latest" }
+          - { image: "wushuo894/komga-cn", tag: "latest" }
+          - { image: "wushuo894/komga-cn", tag: "test" }
+          - { image: "xhofe/alist", tag: "beta" }
+          - { image: "xhofe/alist", tag: "latest" }
+          - { image: "xhongc/music_tag_web", tag: "1.2.7" }
+          - { image: "xhongc/music_tag_web", tag: "latest" }
+          - { image: "xiaoyi510/xarr-rss", tag: "latest" }
+          - { image: "xinjiawei1/emby_unlockd", tag: "beta" }
+          - { image: "xinjiawei1/emby_unlockd", tag: "latest" }
+          - { image: "yilee01/mihomo-yacd", tag: "latest" }
+          - { image: "youshandefeiyang/allinone", tag: "latest" }
+          - { image: "zerotier/zerotier", tag: "latest" }
+          # ghcr
+          # - { image: "ghcr.io/yuukiy/javsp", tag: "master" }
+          # - { image: "ghcrniu.edu.cn/ourongxing/newsnow", tag: "latest" }
+      max-parallel: 2
+      fail-fast: false
+    steps:
+      - name: Setup jq
+        run: |
+          sudo apt install -y jq
+      - name: Fetch image digest
+        id: get-digest
+        run: |
+          API_URL="https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/tags/${{ matrix.image_tag.tag }}"
+          echo "digest=$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.digest')" >> $GITHUB_OUTPUT
+          echo "tag_last_pushed_date=$(echo "$(curl -sLH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" $API_URL | jq -r '.tag_last_pushed')" | cut -d'T' -f1 | tr -d '-')" >> $GITHUB_OUTPUT
+      - name: Cache check
+        uses: actions/cache@v3
+        id: cache-check
+        with:
+          path: ./digests/digests.txt
+          key: ${{ runner.os }}-${{ matrix.image_tag.image }}-${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.digest }}
+      - name: Setup Skopeo
+        if: steps.cache-check.outputs.cache-hit != 'true'
+        run: |
+          wget https://github.com/lework/skopeo-binary/releases/download/v1.18.0/skopeo-linux-amd64 # 需跟随项目更新
+          sudo mv skopeo-linux-amd64 /usr/bin/skopeo
+          sudo chmod +x /usr/bin/skopeo
+      - name: Mirror image
+        id: mirror-image
+        if: steps.cache-check.outputs.cache-hit != 'true'
+        env:
+          SKOPEO_AUTHFILE: "/tmp/auth.json"
+        run: |
+          mkdir -p ./digests
+          echo "${{ steps.get-digest.outputs.digest }}" > ./digests/digests.txt
+          if [[ "${{ matrix.image_tag.image }}" == ghcr.io/* ]]; then
+            skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} ghcr.io -u ${{ github.actor }} -p ${{ secrets.API_TOKEN }}
+          else
+            skopeo login --authfile ${{ env.SKOPEO_AUTHFILE }} docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PWD }}
+          fi
+          retry_count=0
+          max_retries=3
+          until [ $retry_count -ge $max_retries ]
+          do
+            skopeo copy --all --authfile ${{ env.SKOPEO_AUTHFILE }} --src-tls-verify=false --dest-tls-verify=false --retry-times 5 --override-os linux --override-arch amd64 "docker://${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }}" "docker://${{ secrets.DOCKER_USER }}/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}'):${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.tag_last_pushed_date }}" && break
+            retry_count=$((retry_count+1))
+            sleep $((RANDOM % 30))  # 随机退避
+          done
+          sudo rm -rf /var/lib/containers/storage/cache/
+      - name: GHCR Sync metadata to Docker
+        if: contains(matrix.image_tag.image, 'ghcr.io')
+        run: |
+          desc=$(skopeo inspect ${{ env.SOURCE_REGISTRY }}/${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }} | jq -r '.Labels.description // "No description"' | jq -Rs .)
+          package_name=$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}')
+          curl -X PATCH -H "Authorization: Bearer ${{ secrets.API_TOKEN }}" -H "Accept: application/vnd.github+json" "https://api.github.com/users/${{ secrets.USER_GITHUB }}/packages/container/$package_name/versions/$(skopeo inspect $source_image | jq -r .Digest)" -d "{\"metadata\":{\"description\":$desc}}"
+      - name: Docker Sync Metadata to Docker
+        # if: steps.cache-check.outputs.cache-hit != 'true'
+        if: steps.mirror-image.outcome == 'success'
+        run: |
+          curl -X PATCH -H "Authorization: JWT $(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "${{ secrets.DOCKER_USER }}", "password": "${{ secrets.DOCKER_PWD }}"}' https://hub.docker.com/v2/users/login/ | jq -r .token)" -H "Content-Type: application/json" "https://hub.docker.com/v2/repositories/liangnianzhi/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}')/" -d "$(jq -n --arg desc "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.description')" --arg full "$(echo "$(curl -sH "Authorization: Bearer ${{ secrets.DOCKERHUB_TOKEN }}" "https://hub.docker.com/v2/repositories/${{ matrix.image_tag.image }}/")" | jq -r '.full_description')" '{description: $desc, full_description: $full}')"
