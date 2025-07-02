@@ -1,98 +1,98 @@
 payload:
 # Emby公益服
   # 南瓜音乐服
-  # - 'vip.nangua.de',🚀 直连
+  # - DOMAIN-SUFFIX,vip.nangua.de,🚀 直连
   # Nya伟大
-  - 'emby.bangumi.ca'
+  - DOMAIN-SUFFIX,emby.bangumi.ca
   # Paul
-  - 'cf.imetyou.top'
+  - DOMAIN-SUFFIX,cf.imetyou.top
   # PiliPili
-  - 'emby-direct.pilipiliultra.com'
-  - 'emby.pilipiliultra.com'
-  - 'pili.994959.xyz'
-  - 'caddy.pilipili.me'
-  - 'vn.pili.im'
+  - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
+  - DOMAIN-SUFFIX,emby.pilipiliultra.com
+  - DOMAIN-SUFFIX,pili.994959.xyz
+  - DOMAIN-SUFFIX,caddy.pilipili.me
+  - DOMAIN-SUFFIX,vn.pili.im
   # 二次元
-  - 'media.nijigem.by'
-  - 'default.cdn.bgp.yt'
-  - 'ct.cdn.bgp.yt'
-  - 'us-w.cdn.bgp.yt'
-  - 'cu.cdn.bgp.yt'
+  - DOMAIN-SUFFIX,media.nijigem.by
+  - DOMAIN-SUFFIX,default.cdn.bgp.yt
+  - DOMAIN-SUFFIX,ct.cdn.bgp.yt
+  - DOMAIN-SUFFIX,us-w.cdn.bgp.yt
+  - DOMAIN-SUFFIX,cu.cdn.bgp.yt
   # 飞越彩虹
-  - 'ch.feiyue.lol'
+  - DOMAIN-SUFFIX,ch.feiyue.lol
   # 探花TV
-  - 'tanhuatv.site'
+  - DOMAIN-SUFFIX,tanhuatv.site
   # HKB
-  - 'hkb-emby.aliz.work'
+  - DOMAIN-SUFFIX,hkb-emby.aliz.work
   # HKA
-  - 'hka-emby3.aliz.work'
+  - DOMAIN-SUFFIX,hka-emby3.aliz.work
   # 影迹
-  - 'emby1.123456789.lol'
-  - 'emby2.9900990.buzz'
+  - DOMAIN-SUFFIX,emby1.123456789.lol
+  - DOMAIN-SUFFIX,emby2.9900990.buzz
   # Plumber
-  - 'plumber.nezhasu.com'
-  - 'shouer.910427.xyz'
+  - DOMAIN-SUFFIX,plumber.nezhasu.com
+  - DOMAIN-SUFFIX,shouer.910427.xyz
   # Peach
-  - 'embymv.link'
+  - DOMAIN-SUFFIX,embymv.link
   # 飞了个喵
-  - 'gy.meowfly.de'
+  - DOMAIN-SUFFIX,gy.meowfly.de
   # 猫眼
-  - 'frre.me'
-  - 'cat-eye.top'
+  - DOMAIN-SUFFIX,frre.me
+  - DOMAIN-SUFFIX,cat-eye.top
   # 入机
-  - 'rjcf.rjf37.com'
-  - 'rjhkgcp.rjf37.com'
-  - 'rjhk.rjf37.com'
+  - DOMAIN-SUFFIX,rjcf.rjf37.com
+  - DOMAIN-SUFFIX,rjhkgcp.rjf37.com
+  - DOMAIN-SUFFIX,rjhk.rjf37.com
   # 机器人签到
-  # - 'rjbot.rjf37.com',🚀 直连
+  # - DOMAIN-SUFFIX,rjbot.rjf37.com,🚀 直连
   # PornEmby
-  - 'pornemby.com'
+  - DOMAIN-SUFFIX,pornemby.com
   # Cherry
-  - 'gongyi.daliziqielili.su'
+  - DOMAIN-SUFFIX,gongyi.daliziqielili.su
   # 叔服
-  - 'emby3.mcjoker.xyz'
+  - DOMAIN-SUFFIX,emby3.mcjoker.xyz
   # 肥牛
-  - 'emby.feiniu.lol'
-  - 'emby2.feiniu.lol'
-  - 'emby3.feiniu.lol'
-  - 'emby4.feiniu.lol'
+  - DOMAIN-SUFFIX,emby.feiniu.lol
+  - DOMAIN-SUFFIX,emby2.feiniu.lol
+  - DOMAIN-SUFFIX,emby3.feiniu.lol
+  - DOMAIN-SUFFIX,emby4.feiniu.lol
   # 片刻影视解说
-  - 'pieclip.okbap.com'
+  - DOMAIN-SUFFIX,pieclip.okbap.com
   # STAR EMBY 2
-  - 'watch.zabc.net'
-  - 'emby2.staryuki.com'
-  - 'emby2.simonvan.space'
+  - DOMAIN-SUFFIX,watch.zabc.net
+  - DOMAIN-SUFFIX,emby2.staryuki.com
+  - DOMAIN-SUFFIX,emby2.simonvan.space
   # 萝卜
-  - 'emby.785858.xyz'
+  - DOMAIN-SUFFIX,emby.785858.xyz
   # 入境
-  - 'rjggcf.rjf37.com'
+  - DOMAIN-SUFFIX,rjggcf.rjf37.com
   # 机器人签到
-  # - 'rjggbot.rjf37.com',🚀 直连
+  # - DOMAIN-SUFFIX,rjggbot.rjf37.com,🚀 直连
   # PlayZ无界云
-  - 'playz.mjji.de'
+  - DOMAIN-SUFFIX,playz.mjji.de
   # PCM爆米花
-  - 'emby.pcmhub.org'
+  - DOMAIN-SUFFIX,emby.pcmhub.org
   # 起点
-  - 'free.28.al'
+  - DOMAIN-SUFFIX,free.28.al
   # 非越
-  - 'z.sfcj.org'
-  - 'cf.sfcj.org'
+  - DOMAIN-SUFFIX,z.sfcj.org
+  - DOMAIN-SUFFIX,cf.sfcj.org
   # 稳健Emby
-  - 'emby.wenjian.de'
+  - DOMAIN-SUFFIX,emby.wenjian.de
   # BBemby
-  - 'beebi.org'
+  - DOMAIN-SUFFIX,beebi.org
   # Nebula星空
-  - 'emby.nebula-media.org'
+  - DOMAIN-SUFFIX,emby.nebula-media.org
   # STAR EMBY1
-  - 'emby1.staryuki.com'
-  - 'emby1.simonvan.space'
+  - DOMAIN-SUFFIX,emby1.staryuki.com
+  - DOMAIN-SUFFIX,emby1.simonvan.space
   # 临境Liminal
-  - 'emby.liminalnet.com'
+  - DOMAIN-SUFFIX,emby.liminalnet.com
   # STAR EMBY3-Edge of Darkness测试服
-  - 'edge.staryuki.me'
+  - DOMAIN-SUFFIX,edge.staryuki.me
   # 105°
-  - 'ciallo.party'
+  - DOMAIN-SUFFIX,ciallo.party
   # 土匪Max
-  - 'tufei.de'
+  - DOMAIN-SUFFIX,tufei.de
   # MSKY
-  - '5msky.com'
+  - DOMAIN-SUFFIX,5msky.com
