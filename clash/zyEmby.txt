@@ -1,0 +1,98 @@
+payload:
+# Emby公益服
+  # 南瓜音乐服
+  # - 'vip.nangua.de',🚀 直连
+  # Nya伟大
+  - 'emby.bangumi.ca'
+  # Paul
+  - 'cf.imetyou.top'
+  # PiliPili
+  - 'emby-direct.pilipiliultra.com'
+  - 'emby.pilipiliultra.com'
+  - 'pili.994959.xyz'
+  - 'caddy.pilipili.me'
+  - 'vn.pili.im'
+  # 二次元
+  - 'media.nijigem.by'
+  - 'default.cdn.bgp.yt'
+  - 'ct.cdn.bgp.yt'
+  - 'us-w.cdn.bgp.yt'
+  - 'cu.cdn.bgp.yt'
+  # 飞越彩虹
+  - 'ch.feiyue.lol'
+  # 探花TV
+  - 'tanhuatv.site'
+  # HKB
+  - 'hkb-emby.aliz.work'
+  # HKA
+  - 'hka-emby3.aliz.work'
+  # 影迹
+  - 'emby1.123456789.lol'
+  - 'emby2.9900990.buzz'
+  # Plumber
+  - 'plumber.nezhasu.com'
+  - 'shouer.910427.xyz'
+  # Peach
+  - 'embymv.link'
+  # 飞了个喵
+  - 'gy.meowfly.de'
+  # 猫眼
+  - 'frre.me'
+  - 'cat-eye.top'
+  # 入机
+  - 'rjcf.rjf37.com'
+  - 'rjhkgcp.rjf37.com'
+  - 'rjhk.rjf37.com'
+  # 机器人签到
+  # - 'rjbot.rjf37.com',🚀 直连
+  # PornEmby
+  - 'pornemby.com'
+  # Cherry
+  - 'gongyi.daliziqielili.su'
+  # 叔服
+  - 'emby3.mcjoker.xyz'
+  # 肥牛
+  - 'emby.feiniu.lol'
+  - 'emby2.feiniu.lol'
+  - 'emby3.feiniu.lol'
+  - 'emby4.feiniu.lol'
+  # 片刻影视解说
+  - 'pieclip.okbap.com'
+  # STAR EMBY 2
+  - 'watch.zabc.net'
+  - 'emby2.staryuki.com'
+  - 'emby2.simonvan.space'
+  # 萝卜
+  - 'emby.785858.xyz'
+  # 入境
+  - 'rjggcf.rjf37.com'
+  # 机器人签到
+  # - 'rjggbot.rjf37.com',🚀 直连
+  # PlayZ无界云
+  - 'playz.mjji.de'
+  # PCM爆米花
+  - 'emby.pcmhub.org'
+  # 起点
+  - 'free.28.al'
+  # 非越
+  - 'z.sfcj.org'
+  - 'cf.sfcj.org'
+  # 稳健Emby
+  - 'emby.wenjian.de'
+  # BBemby
+  - 'beebi.org'
+  # Nebula星空
+  - 'emby.nebula-media.org'
+  # STAR EMBY1
+  - 'emby1.staryuki.com'
+  - 'emby1.simonvan.space'
+  # 临境Liminal
+  - 'emby.liminalnet.com'
+  # STAR EMBY3-Edge of Darkness测试服
+  - 'edge.staryuki.me'
+  # 105°
+  - 'ciallo.party'
+  # 土匪Max
+  - 'tufei.de'
+  # MSKY
+  - '5msky.com'
