@@ -1,0 +1,7 @@
+payload:
+# mdcx刮削 & byte-muse预告
+  # FANZA(DMM)
+  - 'dmm.co.jp'
+  - 'prestige-av.com'
+  - 'mgstage.com'
+  - 'faleno.jp'
