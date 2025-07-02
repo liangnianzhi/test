@@ -1,33 +1,33 @@
 payload:
 # cloudflare: 过CF盾
   # CF盾
-  # - 'cloudflare.com'
+  # - DOMAIN-SUFFIX,cloudflare.com
 # 其他
   # x99x
-  # - 'x999x.me'
+  # - DOMAIN-SUFFIX,x999x.me
   # 禁漫天堂
-  # - '18comic.vip'
+  # - DOMAIN-SUFFIX,18comic.vip
 # PT站
   # 龟
-  - 'kamept.com'
+  - DOMAIN-SUFFIX,kamept.com
   # 1pt
-  - '1ptba.com'
+  - DOMAIN-SUFFIX,1ptba.com
   # 自由农场
-  - 'pt.0ff.cc'
+  - DOMAIN-SUFFIX,pt.0ff.cc
   # 红叶
-  - 'leaves.red'
+  - DOMAIN-SUFFIX,leaves.red
   # 猪猪
-  - 'piggo.me'
+  - DOMAIN-SUFFIX,piggo.me
   # 老师
-  - 'nicept.net'
+  - DOMAIN-SUFFIX,nicept.net
   # 学校
-  - 'pt.btschool.club'
+  - DOMAIN-SUFFIX,pt.btschool.club
   # 肉丝
-  - 'rousi.zip'
+  - DOMAIN-SUFFIX,rousi.zip
   # 萝莉
-  - 'share.ilolicon.com'
+  - DOMAIN-SUFFIX,share.ilolicon.com
   # 野马
-  - 'www.yemapt.org'
+  - DOMAIN-SUFFIX,www.yemapt.org
 # Emby公益服
   # 南瓜音乐服
-  - 'vip.nangua.de'
+  - DOMAIN-SUFFIX,vip.nangua.de
