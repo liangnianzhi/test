@@ -1,0 +1,20 @@
+payload:
+# AI专线，香港节点似乎不能用
+# Gemini_Google
+  # Gemini API Endpoint
+  - 'generativelanguage.googleapis.com'
+  # Gemini 的主要网站
+  - 'gemini.google.com'
+  # Google AI 开发者网站，包含 API 文件和 Google AI Studio
+  - 'ai.google.dev'
+  # Google AI Studio 的网域，一个线上测试和开发 Gemini 的平台
+  - 'aistudio.google.com'
+  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
+  - 'accounts.google.com'
+  - 'ssl.gstatic.com'
+  - 'www.gstatic.com'
+  - 'apis.google.com'
+  # 确保 Google 核心服务正常
+  - 'googleapis.com'
+  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
+  - 'googleusercontent.com'
