@@ -1,12 +1,4 @@
 payload:
-# cloudflare: 过CF盾
-  # CF盾
-  # - 'cloudflare.com'
-# 其他
-  # x99x
-  # - 'x999x.me'
-  # 禁漫天堂
-  # - '18comic.vip'
 # PT站
   # 龟
   - 'kamept.com'
@@ -31,3 +23,11 @@ payload:
 # Emby公益服
   # 南瓜音乐服
   - 'vip.nangua.de'
+# cloudflare: 过CF盾
+  # CF盾
+  # - 'cloudflare.com'
+# 其他
+  # x99x
+  # - 'x999x.me'
+  # 禁漫天堂
+  # - '18comic.vip'
