@@ -18,3 +18,11 @@ payload:
   - DOMAIN-SUFFIX,googleapis.com
   # 为了确保网页功能完整（例如登入、图片显示等），用于登录
   - DOMAIN-SUFFIX,googleusercontent.com
+  # claude主域名
+  - DOMAIN-SUFFIX,anthropic.com
+  # Web 服务
+  - DOMAIN-SUFFIX,claude.ai
+  # API 入口
+  - DOMAIN-SUFFIX,api.anthropic.com
+  # 管理台
+  - DOMAIN-SUFFIX,console.anthropic.com
