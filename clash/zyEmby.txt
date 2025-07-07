@@ -96,3 +96,9 @@ payload:
   - DOMAIN-SUFFIX,tufei.de
   # MSKY
   - DOMAIN-SUFFIX,5msky.com
+  # 結束バンド(原牢大野兽餐厅已转私)
+  - DOMAIN-SUFFIX,kessoku-bando.biliblili.uk
+  # ZoxFree(Zox公费服旗下公益服)
+  - DOMAIN-SUFFIX,zoxfree.3767483.xyz
+  # 游骑兵(银河MJJ)
+  - DOMAIN-SUFFIX,emby.heisi.org
