@@ -32,4 +32,4 @@ payload:
   # 南瓜音乐服
   - DOMAIN-SUFFIX,vip.nangua.de
   # 云云Emby-电视剧、综艺、动漫等
-  - DOMAIN-SUFFIX,cf.yunti.online
+  # - DOMAIN-SUFFIX,cf.yunti.online
