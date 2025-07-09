@@ -102,3 +102,5 @@ payload:
   - DOMAIN-SUFFIX,zoxfree.3767483.xyz
   # 游骑兵(银河MJJ)
   - DOMAIN-SUFFIX,emby.heisi.org
+  # Emby存档服-Zn的影视库
+  - DOMAIN-SUFFIX,emby.zn.al
