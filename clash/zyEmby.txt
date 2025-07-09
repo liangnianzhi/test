@@ -104,3 +104,20 @@ payload:
   - DOMAIN-SUFFIX,emby.heisi.org
   # Emby存档服-Zn的影视库
   - DOMAIN-SUFFIX,emby.zn.al
+  # 云云Emby-电视剧、综艺、动漫等
+  - DOMAIN-SUFFIX,cf.yunti.online
+  # 云云Emby-电影库
+  - DOMAIN-SUFFIX,emby2.yunti.online
+  # 目前为删档公测期间
+  # 云幕NubeBelle-主要线路1 HK
+  - DOMAIN-SUFFIX,emby-b.nubebelle.vip
+  # 云幕NubeBelle-主要线路2 HK
+  - DOMAIN-SUFFIX,emby-c.nubebelle.vip
+  # 云幕NubeBelle-主要线路3 HK
+  - DOMAIN-SUFFIX,emby-a.nubebelle.vip
+  # 云幕NubeBelle-主要线路4 HK
+  - DOMAIN-SUFFIX,emby.nubebelle.vip
+  # 云幕NubeBelle-备用线路1 HK：此线路可直连 速度普通
+  - DOMAIN-SUFFIX,emby.nubebelle.cn
+  # 云幕NubeBelle-备用线路2 SG
+  - DOMAIN-SUFFIX,emby-sg.nubebelle.vip
