@@ -105,7 +105,7 @@ payload:
   # Emby存档服-Zn的影视库
   - DOMAIN-SUFFIX,emby.zn.al
   # 云云Emby-电视剧、综艺、动漫等
-  - DOMAIN-SUFFIX,cf.yunti.online
+  # - DOMAIN-SUFFIX,cf.yunti.online
   # 云云Emby-电影库
   - DOMAIN-SUFFIX,emby2.yunti.online
   # 目前为删档公测期间
