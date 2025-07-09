@@ -110,7 +110,7 @@ payload:
   - DOMAIN-SUFFIX,emby2.yunti.online
   # 目前为删档公测期间
   # 云幕NubeBelle-主要线路1 HK
-  - DOMAIN-SUFFIX,emby-b.nubebelle.vip
+  # - DOMAIN-SUFFIX,emby-b.nubebelle.vip
   # 云幕NubeBelle-主要线路2 HK
   - DOMAIN-SUFFIX,emby-c.nubebelle.vip
   # 云幕NubeBelle-主要线路3 HK
