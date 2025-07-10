@@ -12,6 +12,10 @@ payload:
   - DOMAIN-SUFFIX,pili.994959.xyz
   - DOMAIN-SUFFIX,caddy.pilipili.me
   - DOMAIN-SUFFIX,vn.pili.im
+  # 终点站Terminus
+  - DOMAIN-SUFFIX,pub1.emby.wtf
+  - DOMAIN-SUFFIX,pub2.emby.wtf
+  - DOMAIN-SUFFIX,pub3.emby.wtf
   # 二次元
   - DOMAIN-SUFFIX,media.nijigem.by
   - DOMAIN-SUFFIX,default.cdn.bgp.yt
@@ -109,15 +113,10 @@ payload:
   # 云云Emby-电影库
   - DOMAIN-SUFFIX,emby2.yunti.online
   # 目前为删档公测期间
-  # 云幕NubeBelle-主要线路1 HK
+  # 云幕NubeBelle
   - DOMAIN-SUFFIX,emby-b.nubebelle.vip
-  # 云幕NubeBelle-主要线路2 HK
   - DOMAIN-SUFFIX,emby-c.nubebelle.vip
-  # 云幕NubeBelle-主要线路3 HK
   - DOMAIN-SUFFIX,emby-a.nubebelle.vip
-  # 云幕NubeBelle-主要线路4 HK
   - DOMAIN-SUFFIX,emby.nubebelle.vip
-  # 云幕NubeBelle-备用线路1 HK：此线路可直连 速度普通
   - DOMAIN-SUFFIX,emby.nubebelle.cn
-  # 云幕NubeBelle-备用线路2 SG
   - DOMAIN-SUFFIX,emby-sg.nubebelle.vip
