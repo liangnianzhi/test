@@ -120,3 +120,7 @@ payload:
   - DOMAIN-SUFFIX,emby.nubebelle.vip
   - DOMAIN-SUFFIX,emby.nubebelle.cn
   - DOMAIN-SUFFIX,emby-sg.nubebelle.vip
+  # Cc公益
+  - DOMAIN-SUFFIX,cc.coemn.com
+  # Doubon
+  - DOMAIN-SUFFIX,onatoshi.114514.quest
