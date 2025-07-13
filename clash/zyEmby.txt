@@ -126,3 +126,5 @@ payload:
   - DOMAIN-SUFFIX,onatoshi.114514.quest
   # KFC疯狂星期四(哪吒云)
   - DOMAIN-SUFFIX,kfc.v50.su
+  # 叶子高码
+  - DOMAIN-SUFFIX,gm.yezi.my
