@@ -124,3 +124,5 @@ payload:
   - DOMAIN-SUFFIX,cc.coemn.com
   # Doubon
   - DOMAIN-SUFFIX,onatoshi.114514.quest
+  # KFC疯狂星期四(哪吒云)
+  - DOMAIN-SUFFIX,kfc.v50.su
