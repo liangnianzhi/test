@@ -128,3 +128,7 @@ payload:
   - DOMAIN-SUFFIX,kfc.v50.su
   # 叶子高码
   - DOMAIN-SUFFIX,gm.yezi.my
+  # 高清剧集网-https://totoro.im/thread-662.htm
+  - DOMAIN-SUFFIX,qqpyf.top
+  # theluyuan-linux.do分享
+  - DOMAIN-SUFFIX,dongman.theluyuan.com
