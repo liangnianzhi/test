@@ -126,6 +126,9 @@ payload:
   - DOMAIN-SUFFIX,onatoshi.114514.quest
   # KFC疯狂星期四(哪吒云)
   - DOMAIN-SUFFIX,kfc.v50.su
+  - DOMAIN-SUFFIX,emby.v50.su
+  - DOMAIN-SUFFIX,cloudflare.v50.su
+  - DOMAIN-SUFFIX,cdn.v50.su
   # 叶子高码
   - DOMAIN-SUFFIX,gm.yezi.my
   # 高清剧集网-https://totoro.im/thread-662.htm
