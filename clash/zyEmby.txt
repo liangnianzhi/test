@@ -6,9 +6,9 @@ payload:
   - DOMAIN-SUFFIX,emby.bangumi.ca
   # Paul
   - DOMAIN-SUFFIX,cf.imetyou.top
-  # PiliPili
-  - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
+  # PiliPili-取消反代线路，仅主线路一条
   - DOMAIN-SUFFIX,emby.pilipiliultra.com
+  - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
   - DOMAIN-SUFFIX,pili.994959.xyz
   - DOMAIN-SUFFIX,caddy.pilipili.me
   - DOMAIN-SUFFIX,vn.pili.im
