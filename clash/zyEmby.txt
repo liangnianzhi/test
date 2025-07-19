@@ -1,7 +1,5 @@
 payload:
 # Emby公益服
-  # 南瓜音乐服
-  # - DOMAIN-SUFFIX,vip.nangua.de,🚀 直连
   # Nya伟大
   - DOMAIN-SUFFIX,emby.bangumi.ca
   # Paul
@@ -137,3 +135,5 @@ payload:
   - DOMAIN-SUFFIX,dongman.theluyuan.com
   # 见手青
   - DOMAIN-SUFFIX,jsq.vban.xyz
+  # Misty
+  - DOMAIN-SUFFIX,misty.cx
