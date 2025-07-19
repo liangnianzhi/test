@@ -61,9 +61,8 @@ payload:
   # 片刻影视解说
   - DOMAIN-SUFFIX,pieclip.okbap.com
   # STAR EMBY 2
-  - DOMAIN-SUFFIX,watch.zabc.net
-  - DOMAIN-SUFFIX,emby2.staryuki.com
-  - DOMAIN-SUFFIX,emby2.simonvan.space
+  - DOMAIN-SUFFIX,us3.staryuki.me
+  - DOMAIN-SUFFIX,c2.staryuki.me # 三网直连
   # 萝卜
   - DOMAIN-SUFFIX,emby.785858.xyz
   # 入境
@@ -86,8 +85,10 @@ payload:
   # Nebula星空
   - DOMAIN-SUFFIX,emby.nebula-media.org
   # STAR EMBY1
-  - DOMAIN-SUFFIX,emby1.staryuki.com
-  - DOMAIN-SUFFIX,emby1.simonvan.space
+  - DOMAIN-SUFFIX,us4.staryuki.me
+  - DOMAIN-SUFFIX,c1.staryuki.me # 三网直连
+  - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # 群友反代移动V4优化
+  - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # 群友反代移动V6优化
   # 临境Liminal
   - DOMAIN-SUFFIX,emby.liminalnet.com
   # STAR EMBY3-Edge of Darkness测试服
@@ -137,3 +138,5 @@ payload:
   - DOMAIN-SUFFIX,jsq.vban.xyz
   # Misty
   - DOMAIN-SUFFIX,misty.cx
+  # SNTP Media Lite-守候影院
+  - DOMAIN-SUFFIX,lite.cn2gias.uk
