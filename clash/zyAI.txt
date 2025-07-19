@@ -1,28 +1,18 @@
 payload:
 # AI专线，香港节点似乎不能用
 # Gemini_Google
-  # Gemini API Endpoint
-  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
-  # Gemini 的主要网站
-  - DOMAIN-SUFFIX,gemini.google.com
-  # Google AI 开发者网站，包含 API 文件和 Google AI Studio
-  - DOMAIN-SUFFIX,ai.google.dev
-  # Google AI Studio 的网域，一个线上测试和开发 Gemini 的平台
-  - DOMAIN-SUFFIX,aistudio.google.com
-  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
-  - DOMAIN-SUFFIX,accounts.google.com
+  - DOMAIN-SUFFIX,generativelanguage.googleapis.com  # Gemini API Endpoint
+  - DOMAIN-SUFFIX,gemini.google.com  # Gemini 的主要网站
+  - DOMAIN-SUFFIX,ai.google.dev  # Google AI 开发者网站，包含 API 文件和 Google AI Studio
+  - DOMAIN-SUFFIX,aistudio.google.com  # Google AI Studio 的网域，一个线上测试和开发 Gemini 的平台
+  - DOMAIN-SUFFIX,accounts.google.com  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
   - DOMAIN-SUFFIX,ssl.gstatic.com
   - DOMAIN-SUFFIX,www.gstatic.com
   - DOMAIN-SUFFIX,apis.google.com
-  # 确保 Google 核心服务正常
-  - DOMAIN-SUFFIX,googleapis.com
-  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
-  - DOMAIN-SUFFIX,googleusercontent.com
-  # claude主域名
-  - DOMAIN-SUFFIX,anthropic.com
-  # Web 服务
-  - DOMAIN-SUFFIX,claude.ai
-  # API 入口
-  - DOMAIN-SUFFIX,api.anthropic.com
-  # 管理台
-  - DOMAIN-SUFFIX,console.anthropic.com
+  - DOMAIN-SUFFIX,googleapis.com  # 确保 Google 核心服务正常
+  - DOMAIN-SUFFIX,googleusercontent.com  # 为了确保网页功能完整（例如登入、图片显示等），用于登录
+# Claude_Anthropic
+  - DOMAIN-SUFFIX,anthropic.com  # claude主域名
+  - DOMAIN-SUFFIX,claude.ai  # Web 服务
+  - DOMAIN-SUFFIX,api.anthropic.com  # API 入口
+  - DOMAIN-SUFFIX,console.anthropic.com  # 管理台
