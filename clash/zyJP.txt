@@ -1,7 +1,6 @@
 payload:
 # mdcx刮削 & byte-muse预告
-  # FANZA(DMM)
-  - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.co.jp  # FANZA(DMM)
   - DOMAIN-SUFFIX,prestige-av.com
   - DOMAIN-SUFFIX,mgstage.com
   - DOMAIN-SUFFIX,faleno.jp
