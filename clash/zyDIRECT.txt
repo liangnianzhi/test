@@ -29,7 +29,15 @@ payload:
   # 野马
   - DOMAIN-SUFFIX,www.yemapt.org
 # Emby公益服
+  # 未响音乐服
+  - DOMAIN-SUFFIX,music.mefun.org
+  # 稳健音乐服
+  - DOMAIN-SUFFIX,music.wenjian.de
+  # ikun音乐服
+  - DOMAIN-SUFFIX,diaojinping.de
   # 南瓜音乐服
   - DOMAIN-SUFFIX,vip.nangua.de
+  # 音海拾贝
+  - DOMAIN-SUFFIX,yinhai.aiinyue.com
   # 云云Emby-电视剧、综艺、动漫等
   # - DOMAIN-SUFFIX,cf.yunti.online
