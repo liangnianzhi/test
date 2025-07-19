@@ -1,142 +1,87 @@
 payload:
 # Emby公益服
-  # Nya伟大
-  - DOMAIN-SUFFIX,emby.bangumi.ca
-  # Paul
-  - DOMAIN-SUFFIX,cf.imetyou.top
-  # PiliPili-取消反代线路，仅主线路一条
-  - DOMAIN-SUFFIX,emby.pilipiliultra.com
-  - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
-  - DOMAIN-SUFFIX,pili.994959.xyz
-  - DOMAIN-SUFFIX,caddy.pilipili.me
-  - DOMAIN-SUFFIX,vn.pili.im
-  # 终点站Terminus
-  - DOMAIN-SUFFIX,pub1.emby.wtf
+  - DOMAIN-SUFFIX,emby.bangumi.ca  # Nya伟大
+  - DOMAIN-SUFFIX,cf.imetyou.top  # Paul
+  - DOMAIN-SUFFIX,emby.pilipiliultra.com  # PiliPili-取消反代线路，仅主线路一条
+  # - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
+  # - DOMAIN-SUFFIX,pili.994959.xyz
+  # - DOMAIN-SUFFIX,caddy.pilipili.me
+  # - DOMAIN-SUFFIX,vn.pili.im
+  - DOMAIN-SUFFIX,pub1.emby.wtf  # 终点站Terminus
   - DOMAIN-SUFFIX,pub2.emby.wtf
   - DOMAIN-SUFFIX,pub3.emby.wtf
-  # 二次元
-  - DOMAIN-SUFFIX,media.nijigem.by
+  - DOMAIN-SUFFIX,media.nijigem.by  # 二次元
   - DOMAIN-SUFFIX,default.cdn.bgp.yt
   - DOMAIN-SUFFIX,ct.cdn.bgp.yt
   - DOMAIN-SUFFIX,us-w.cdn.bgp.yt
   - DOMAIN-SUFFIX,cu.cdn.bgp.yt
-  # 飞越彩虹
-  - DOMAIN-SUFFIX,ch.feiyue.lol
-  # 探花TV
-  - DOMAIN-SUFFIX,tanhuatv.site
-  # HKB
-  - DOMAIN-SUFFIX,hkb-emby.aliz.work
-  # HKA
-  - DOMAIN-SUFFIX,hka-emby3.aliz.work
-  # 影迹
-  - DOMAIN-SUFFIX,emby1.123456789.lol
-  - DOMAIN-SUFFIX,emby2.9900990.buzz
-  # Plumber
-  - DOMAIN-SUFFIX,plumber.nezhasu.com
+  - DOMAIN-SUFFIX,ch.feiyue.lol  # 飞越彩虹
+  - DOMAIN-SUFFIX,tanhuatv.site  # 探花TV
+  - DOMAIN-SUFFIX,hkb-emby.aliz.work  # HKB
+  - DOMAIN-SUFFIX,hka-emby3.aliz.work  # HKA
+  # - DOMAIN-SUFFIX,emby1.123456789.lol  # 影迹
+  # - DOMAIN-SUFFIX,emby2.9900990.buzz
+  - DOMAIN-SUFFIX,plumber.nezhasu.com  # Plumber
   - DOMAIN-SUFFIX,shouer.910427.xyz
-  # Peach
-  - DOMAIN-SUFFIX,embymv.link
-  # 飞了个喵
-  - DOMAIN-SUFFIX,gy.meowfly.de
-  # 猫眼
-  - DOMAIN-SUFFIX,frre.me
+  - DOMAIN-SUFFIX,embymv.link  # Peach
+  - DOMAIN-SUFFIX,gy.meowfly.de  # 飞了个喵
+  - DOMAIN-SUFFIX,frre.me  # 猫眼
   - DOMAIN-SUFFIX,cat-eye.top
-  # 入机
-  - DOMAIN-SUFFIX,rjcf.rjf37.com
+  - DOMAIN-SUFFIX,rjcf.rjf37.com  # 入机
   - DOMAIN-SUFFIX,rjhkgcp.rjf37.com
   - DOMAIN-SUFFIX,rjhk.rjf37.com
-  # 机器人签到
-  # - DOMAIN-SUFFIX,rjbot.rjf37.com,🚀 直连
-  # PornEmby
-  - DOMAIN-SUFFIX,pornemby.com
-  # Cherry
-  - DOMAIN-SUFFIX,gongyi.daliziqielili.su
-  # 叔服
-  - DOMAIN-SUFFIX,emby3.mcjoker.xyz
-  # 肥牛
-  - DOMAIN-SUFFIX,emby.feiniu.lol
+  # - DOMAIN-SUFFIX,rjbot.rjf37.com,🚀 直连  # 机器人签到
+  - DOMAIN-SUFFIX,pornemby.com  # PornEmby
+  - DOMAIN-SUFFIX,gongyi.daliziqielili.su  # Cherry
+  - DOMAIN-SUFFIX,emby3.mcjoker.xyz  # 叔服
+  - DOMAIN-SUFFIX,emby.feiniu.lol  # 肥牛
   - DOMAIN-SUFFIX,emby2.feiniu.lol
   - DOMAIN-SUFFIX,emby3.feiniu.lol
   - DOMAIN-SUFFIX,emby4.feiniu.lol
-  # 片刻影视解说
-  - DOMAIN-SUFFIX,pieclip.okbap.com
-  # STAR EMBY 2
-  - DOMAIN-SUFFIX,us3.staryuki.me
-  - DOMAIN-SUFFIX,c2.staryuki.me # 三网直连
-  # 萝卜
-  - DOMAIN-SUFFIX,emby.785858.xyz
-  # 入境
-  - DOMAIN-SUFFIX,rjggcf.rjf37.com
-  # 机器人签到
-  # - DOMAIN-SUFFIX,rjggbot.rjf37.com,🚀 直连
-  # PlayZ无界云
-  - DOMAIN-SUFFIX,playz.mjji.de
-  # PCM爆米花
-  - DOMAIN-SUFFIX,emby.pcmhub.org
-  # 起点
-  - DOMAIN-SUFFIX,free.28.al
-  # 非越
-  - DOMAIN-SUFFIX,z.sfcj.org
+  - DOMAIN-SUFFIX,pieclip.okbap.com  # 片刻影视解说
+  - DOMAIN-SUFFIX,us3.staryuki.me  # STAR EMBY 2
+  - DOMAIN-SUFFIX,c2.staryuki.me
+  - DOMAIN-SUFFIX,emby.785858.xyz  # 萝卜
+  - DOMAIN-SUFFIX,rjggcf.rjf37.com  # 入境
+  # - DOMAIN-SUFFIX,rjggbot.rjf37.com,🚀 直连  # 机器人签到
+  - DOMAIN-SUFFIX,playz.mjji.de  # PlayZ无界云
+  - DOMAIN-SUFFIX,emby.pcmhub.org  # PCM爆米花
+  - DOMAIN-SUFFIX,free.28.al  # 起点
+  - DOMAIN-SUFFIX,z.sfcj.org  # 非越
   - DOMAIN-SUFFIX,cf.sfcj.org
-  # 稳健Emby
-  - DOMAIN-SUFFIX,emby.wenjian.de
-  # BBemby
-  - DOMAIN-SUFFIX,beebi.org
-  # Nebula星空
-  - DOMAIN-SUFFIX,emby.nebula-media.org
-  # STAR EMBY1
-  - DOMAIN-SUFFIX,us4.staryuki.me
-  - DOMAIN-SUFFIX,c1.staryuki.me # 三网直连
-  - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # 群友反代移动V4优化
-  - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # 群友反代移动V6优化
-  # 临境Liminal
-  - DOMAIN-SUFFIX,emby.liminalnet.com
-  # STAR EMBY3-Edge of Darkness测试服
-  - DOMAIN-SUFFIX,edge.staryuki.me
-  # 105°
-  - DOMAIN-SUFFIX,ciallo.party
-  # 土匪Max
-  - DOMAIN-SUFFIX,tufei.de
-  # MSKY
-  - DOMAIN-SUFFIX,5msky.com
-  # 結束バンド(原牢大野兽餐厅已转私)
-  - DOMAIN-SUFFIX,kessoku-bando.biliblili.uk
-  # ZoxFree(Zox公费服旗下公益服)
-  - DOMAIN-SUFFIX,zoxfree.3767483.xyz
-  # 游骑兵(银河MJJ)
-  - DOMAIN-SUFFIX,emby.heisi.org
-  # Emby存档服-Zn的影视库
-  - DOMAIN-SUFFIX,emby.zn.al
-  # 云云Emby-电视剧、综艺、动漫等
-  - DOMAIN-SUFFIX,cf.yunti.online
-  # 云云Emby-电影库
-  - DOMAIN-SUFFIX,emby2.yunti.online
-  # 目前为删档公测期间
-  # 云幕NubeBelle
-  - DOMAIN-SUFFIX,emby-b.nubebelle.vip
+  - DOMAIN-SUFFIX,emby.wenjian.de  # 稳健Emby
+  - DOMAIN-SUFFIX,beebi.org  # BBemby
+  - DOMAIN-SUFFIX,emby.nebula-media.org  # Nebula星空
+  - DOMAIN-SUFFIX,us4.staryuki.me  # STAR EMBY1
+  - DOMAIN-SUFFIX,c1.staryuki.me
+  - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc
+  - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc
+  - DOMAIN-SUFFIX,emby.liminalnet.com  # 临境Liminal
+  - DOMAIN-SUFFIX,edge.staryuki.me  # STAR EMBY3-Edge of Darkness测试服
+  - DOMAIN-SUFFIX,ciallo.party  # 105°兔子服
+  - DOMAIN-SUFFIX,tufei.de  # 土匪Max
+  - DOMAIN-SUFFIX,5msky.com  # MSKY
+  - DOMAIN-SUFFIX,kessoku-bando.biliblili.uk  # 結束バンド(原牢大野兽餐厅已转私)
+  - DOMAIN-SUFFIX,zoxfree.3767483.xyz  # ZoxFree(Zox公费服旗下公益服)
+  - DOMAIN-SUFFIX,emby.heisi.org  # 游骑兵(银河MJJ)
+  - DOMAIN-SUFFIX,emby.zn.al  # Emby存档服-Zn的影视库
+  - DOMAIN-SUFFIX,cf.yunti.online  # 云云Emby-电视剧、综艺、动漫等
+  - DOMAIN-SUFFIX,emby2.yunti.online  # 云云Emby-电影库
+  - DOMAIN-SUFFIX,emby-b.nubebelle.vip  # 云幕NubeBelle, 目前为删档公测期间
   - DOMAIN-SUFFIX,emby-c.nubebelle.vip
   - DOMAIN-SUFFIX,emby-a.nubebelle.vip
   - DOMAIN-SUFFIX,emby.nubebelle.vip
   - DOMAIN-SUFFIX,emby.nubebelle.cn
   - DOMAIN-SUFFIX,emby-sg.nubebelle.vip
-  # Cc公益
-  - DOMAIN-SUFFIX,cc.coemn.com
-  # Doubon
-  - DOMAIN-SUFFIX,onatoshi.114514.quest
-  # KFC疯狂星期四(哪吒云)
-  - DOMAIN-SUFFIX,kfc.v50.su
+  - DOMAIN-SUFFIX,cc.coemn.com  # Cc公益
+  - DOMAIN-SUFFIX,onatoshi.114514.quest  # Doubon
+  - DOMAIN-SUFFIX,kfc.v50.su  # KFC疯狂星期四(哪吒云)
   - DOMAIN-SUFFIX,emby.v50.su
   - DOMAIN-SUFFIX,cloudflare.v50.su
   - DOMAIN-SUFFIX,cdn.v50.su
-  # 叶子高码
-  - DOMAIN-SUFFIX,gm.yezi.my
-  # 高清剧集网-https://totoro.im/thread-662.htm
-  - DOMAIN-SUFFIX,qqpyf.top
-  # theluyuan-linux.do分享
-  - DOMAIN-SUFFIX,dongman.theluyuan.com
-  # 见手青
-  - DOMAIN-SUFFIX,jsq.vban.xyz
-  # Misty
-  - DOMAIN-SUFFIX,misty.cx
-  # SNTP Media Lite-守候影院
-  - DOMAIN-SUFFIX,lite.cn2gias.uk
+  - DOMAIN-SUFFIX,gm.yezi.my  # 叶子高码
+  - DOMAIN-SUFFIX,qqpyf.top  # 高清剧集网-https://totoro.im/thread-662.htm
+  - DOMAIN-SUFFIX,dongman.theluyuan.com  # theluyuan-linux.do分享
+  - DOMAIN-SUFFIX,jsq.vban.xyz  # 见手
+  - DOMAIN-SUFFIX,misty.cx  # Misty
+  - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP Media Lite-守候影院
