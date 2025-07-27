@@ -65,3 +65,4 @@ payload:
   - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP Media Lite-守候影院
   - DOMAIN-SUFFIX,chilledmelon.com # 冰镇西瓜ChilledMelon(rn.|cloudf.|seoul.|sjc.|daigua.|mzlpin.|mr.)
   - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
+  - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
