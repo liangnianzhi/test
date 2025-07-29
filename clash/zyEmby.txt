@@ -29,7 +29,7 @@ payload:
   - DOMAIN-SUFFIX,emby3.mcjoker.xyz  # 叔服
   - DOMAIN-SUFFIX,feiniu.lol  # 肥牛(emby.|emby2.|emby3.|emby4.)
   - DOMAIN-SUFFIX,pieclip.okbap.com  # 片刻影视解说
-  - DOMAIN-SUFFIX,staryuki.me  # STAR EMBY1(us4.|c1.) STAR EMBY2(us3.|c2.)
+  - DOMAIN-SUFFIX,staryuki.me  # STAR EMBY1(c1.|c3.|de1.|us4.) STAR EMBY2(de2.|us3.)
   - DOMAIN-SUFFIX,staryuki.me.kiven.cc # STAR EMBY1热心群友反代(fast-1.|fast-v6.)
   - DOMAIN-SUFFIX,emby.785858.xyz  # 萝卜
   - DOMAIN-SUFFIX,rjggcf.rjf37.com  # 入境
