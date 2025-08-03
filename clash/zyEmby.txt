@@ -67,3 +67,4 @@ payload:
   - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
   - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
   - DOMAIN-SUFFIX,younoyes.com # Youno(emby.|jp.|us.)
+  - DOMAIN-SUFFIX,emby.1l1.icu # Prejudice
