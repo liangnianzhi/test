@@ -66,3 +66,4 @@ payload:
   - DOMAIN-SUFFIX,chilledmelon.com # 冰镇西瓜ChilledMelon(rn.|cloudf.|seoul.|sjc.|daigua.|mzlpin.|mr.)
   - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
   - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
+  - DOMAIN-SUFFIX,younoyes.com # Youno(emby.|jp.|us.)
