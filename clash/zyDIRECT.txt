@@ -40,7 +40,7 @@ payload:
   - DOMAIN-SUFFIX,share.ilolicon.com  # 萝莉
   - DOMAIN-SUFFIX,ptvicomo.net  # 象岛
   - DOMAIN-SUFFIX,www.hdkyl.in  # 麒麟
-  # - DOMAIN-SUFFIX,www.yemapt.org  # 野马
+  - DOMAIN-SUFFIX,www.yemapt.org  # 野马
   # - DOMAIN-SUFFIX,t.tosky.club  # Tosky
   - DOMAIN-SUFFIX,ptfans.cc  # PTFans
   - DOMAIN-SUFFIX,monikadesign.uk  # 莫妮卡
@@ -64,4 +64,10 @@ payload:
   - DOMAIN-SUFFIX,diaojinping.de  # ikun音乐服
   - DOMAIN-SUFFIX,vip.nangua.de  # 南瓜音乐服
   - DOMAIN-SUFFIX,yinhai.aiinyue.com  # 音海拾贝
-  # - DOMAIN-SUFFIX,cf.yunti.online  # 云云Emby-电视剧、综艺、动漫等
+  - DOMAIN-SUFFIX,jp.younoyes.com # Youno日本直连线路 12MiBps强限速 请勿长期占用带宽 感谢 无任何SLA
+  - DOMAIN-SUFFIX,us.younoyes.com # Youno美西直连线路 15MiBps强限速 请勿长期占用带宽 感谢 无任何SLA
+  - DOMAIN-SUFFIX,media.nijigem.by  # 二次元, 智能分流, 直连
+  - DOMAIN-SUFFIX,cdn.bgp.yt # 二次元其他线路(default.|ct.|us-w.|cu.|), 直连
+  - DOMAIN-SUFFIX,c1.staryuki.me  # STAR EMBY1⚡️ 香港直连优化线路, 直连
+  - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv4大陆&国际优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
+  - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv6直连优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
