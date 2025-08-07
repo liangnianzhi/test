@@ -71,7 +71,8 @@ payload:
   - DOMAIN-SUFFIX,dongman.theluyuan.com  # theluyuan-linux.do分享
   - DOMAIN-SUFFIX,jsq.vban.xyz  # 见手青
   # - DOMAIN-SUFFIX,misty.cx  # Misty, 屏蔽大陆, 梯子
-  # - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP Media Lite-守候影院, 屏蔽大陆, 梯子
+  # - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP Media Lite-守候影院 主线路-V4, 屏蔽大陆, 梯子
+  # - DOMAIN-SUFFIX,lite-v6.cn2gias.uk  # SNTP Media Lite-守候影院 主线路-V6, 屏蔽大陆, 梯子
   - DOMAIN-SUFFIX,chilledmelon.com # 冰镇西瓜ChilledMelon(rn.|cloudf.|seoul.|sjc.|daigua.|mzlpin.|mr.)
   - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
   - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
