@@ -81,3 +81,8 @@ payload:
   # - DOMAIN-SUFFIX,us.younoyes.com # Youno美西直连线路 15MiBps强限速 请勿长期占用带宽 感谢 无任何SLA, 直连
   - DOMAIN-SUFFIX,emby.1l1.icu # Prejudice
   - DOMAIN-SUFFIX,emby.hohai.eu.org # HOUHAI
+  - DOMAIN-SUFFIX,a1.handoumedia.top # 憨豆 A1线路
+  - DOMAIN-SUFFIX,a2.handoumedia.top # 憨豆 A2线路
+  - DOMAIN-SUFFIX,a3.handoumedia.top # 憨豆 A3线路
+  - DOMAIN-SUFFIX,b1.handoumedia.top # 憨豆 B1线路
+  - DOMAIN-SUFFIX,b2.handoumedia.top # 憨豆 B2线路
