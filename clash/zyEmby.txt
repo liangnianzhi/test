@@ -31,10 +31,13 @@ payload:
   - DOMAIN-SUFFIX,emby3.mcjoker.xyz  # 叔服
   - DOMAIN-SUFFIX,emby.feiniu.lol  # 肥牛, cf线路, 暂时不用梯子
   - DOMAIN-SUFFIX,pieclip.okbap.com  # 片刻影视解说
-  # - DOMAIN-SUFFIX,c1.staryuki.me  # STAR EMBY1⚡️ 香港直连优化线路, 直连
-  - DOMAIN-SUFFIX,de1.staryuki.me  # STAR EMBY1❇️ 德国原生线路
-  - DOMAIN-SUFFIX,c2.staryuki.me  # STAR EMBY2⚡️ 香港优化线路
-  - DOMAIN-SUFFIX,de2.staryuki.me  # STAR EMBY2🌩️ 原生德国线路
+  - DOMAIN-SUFFIX,c1.staryuki.me  # STAR EMBY1✨ CoverIP优化（跑路但暂可用）
+  - DOMAIN-SUFFIX,cf-star1.staryuki.me  # STAR EMBY1🌐 CloudFlare CDN
+  - DOMAIN-SUFFIX,eo-star.staryuki.com  # STAR EMBY1🌐 Tencent EdgeOne CDN
+  - DOMAIN-SUFFIX,de1.staryuki.me  # STAR EMBY1❇️ 德国反代
+  - DOMAIN-SUFFIX,s1.staryuki.me  # STAR EMBY1❇️ 英国原生线路 
+  - DOMAIN-SUFFIX,c2.staryuki.me  # STAR EMBY2✨ CoverIP优化（跑路但可用）
+  - DOMAIN-SUFFIX,de2.staryuki.me  # STAR EMBY2❇️ 德国反代
   # - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv4大陆&国际优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
   # - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv6直连优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
   - DOMAIN-SUFFIX,emby.785858.xyz  # 萝卜
