@@ -42,8 +42,8 @@ payload:
   # - DOMAIN-SUFFIX,playz.mjji.de  # PlayZ无界云, 屏蔽大陆, 梯子
   - DOMAIN-SUFFIX,emby.pcmhub.org  # PCM爆米花
   - DOMAIN-SUFFIX,free.28.al  # 起点
-  - DOMAIN-SUFFIX,c.sfcj.org  # 非越V4线路
-  - DOMAIN-SUFFIX,cf.sfcj.org  # 非越V4/V6兼容, cf线路, 暂时不用梯子
+  - DOMAIN-SUFFIX,cf.sfcj.org  # 非越 线路一, cf线路暂时不用梯子
+  - DOMAIN-SUFFIX,cdn.sfcj.org  # 非越 线路二, cdn线路应该是直连
   - DOMAIN-SUFFIX,emby.wenjian.de  # 稳健Emby
   - DOMAIN-SUFFIX,beebi.org  # BBemby
   # - DOMAIN-SUFFIX,emby.nebula-media.org  # Nebula星空, 屏蔽大陆, 日本, 梯子
