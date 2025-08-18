@@ -68,6 +68,5 @@ payload:
   - DOMAIN-SUFFIX,us.younoyes.com # Youno美西直连线路 15MiBps强限速 请勿长期占用带宽 感谢 无任何SLA
   - DOMAIN-SUFFIX,media.nijigem.by  # 二次元, 智能分流, 直连
   - DOMAIN-SUFFIX,cdn.bgp.yt # 二次元其他线路(default.|ct.|us-w.|cu.|), 直连
-  - DOMAIN-SUFFIX,c1.staryuki.me  # STAR EMBY1⚡️ 香港直连优化线路, 直连
   - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv4大陆&国际优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
   - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv6直连优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
