@@ -190,7 +190,7 @@ jobs:
           max_retries=3
           until [ $retry_count -ge $max_retries ]
           do
-            skopeo copy --all --authfile ${{ env.SKOPEO_AUTHFILE }} --src-tls-verify=false --dest-tls-verify=false --retry-times 5 --override-os linux --override-arch amd64 "docker://${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }}" "docker://${{ secrets.DOCKER_USER }}/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}'):${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.last_updated }}" && break
+            skopeo copy --all --authfile ${{ env.SKOPEO_AUTHFILE }} --src-tls-verify=false --dest-tls-verify=false --retry-times 5 --override-os linux --override-arch amd64 "docker://${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }}" "docker://${{ secrets.DOCKER_USER }}/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}'):${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.tag_last_pushed_date }}" && break
             retry_count=$((retry_count+1))
             sleep $((RANDOM % 30))  # 随机退避
           done
