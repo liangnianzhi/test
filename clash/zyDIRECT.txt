@@ -1,6 +1,8 @@
 payload:
 # cloudflare: 过CF盾
   # - DOMAIN-SUFFIX,cloudflare.com  # CF盾
+# 98堂-色花堂
+  - DOMAIN-SUFFIX,wtzs1.q28qe.net  # 98堂国内直连地址
 # 其他
   # - DOMAIN-SUFFIX,x999x.me  # x99x
   # - DOMAIN-SUFFIX,18comic.vip  # 禁漫天堂
