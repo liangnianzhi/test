@@ -23,6 +23,7 @@ jobs:
           - { image: "chigusa/bililive-go", tag: "latest" }
           - { image: "cloudnas/clouddrive2", tag: "latest" }
           - { image: "containrrr/watchtower", tag: "latest" }
+          - { image: "cxsz16888/sehuatang", tag: "latest" }
           - { image: "deluan/navidrome", tag: "develop" }
           - { image: "deluan/navidrome", tag: "latest" }
           - { image: "difegue/lanraragi", tag: "latest" }
@@ -31,11 +32,13 @@ jobs:
           - { image: "diygod/rsshub", tag: "latest" }
           - { image: "dreamacro/clash", tag: "dev" }
           - { image: "dreamacro/clash", tag: "latest" }
-          - { image: "emby/embyserver", tag: "4.8.11.0" }
-          - { image: "emby/embyserver", tag: "4.9.0.48" }
+          # - { image: "emby/embyserver", tag: "4.8.11.0" }
+          # - { image: "emby/embyserver", tag: "4.9.0.48" }
           - { image: "emby/embyserver", tag: "beta" }
           - { image: "emby/embyserver", tag: "latest" }
           - { image: "embykeeper/embykeeper", tag: "latest" }
+          - { image: "embykeeper/embykeeper", tag: "main-dev" }
+          - { image: "envyafish/byte-muse", tag: "latest" }
           - { image: "estrellaxd/auto_bangumi", tag: "latest" }
           - { image: "evanqu/jellyfin-library-poster", tag: "latest" }
           - { image: "excalidraw/excalidraw", tag: "latest" }
@@ -70,6 +73,7 @@ jobs:
           - { image: "jellyfin/jellyfin", tag: "unstable" }
           - { image: "jxxghp/moviepilot", tag: "latest" }
           - { image: "jxxghp/moviepilot-v2", tag: "latest" }
+          - { image: "l429609201/misaka_danmu_server", tag: "latest" }
           - { image: "len996/115bot", tag: "latest" }
           - { image: "linuxserver/bazarr", tag: "development" }
           - { image: "linuxserver/bazarr", tag: "latest" }
@@ -84,15 +88,17 @@ jobs:
           - { image: "linuxserver/qbittorrent", tag: "latest" }
           - { image: "linuxserver/radarr", tag: "latest" }
           - { image: "linuxserver/sonarr", tag: "latest" }
-          - { image: "linuxserver/transmission", tag: "4.0.5" }
+          # - { image: "linuxserver/transmission", tag: "4.0.5" }
           - { image: "linuxserver/transmission", tag: "latest" }
           - { image: "lswl/vertex", tag: "latest" }
-          - { image: "mdcng/mdc", tag: "beta" }
+          # - { image: "mdcng/mdc", tag: "beta" }
           - { image: "mdcng/mdc", tag: "latest" }
           - { image: "metacubex/mihomo", tag: "Alpha" }
           - { image: "metacubex/mihomo", tag: "latest" }
           - { image: "mysql", tag: "latest" }
+          - { image: "nfhgw295/tg-mangodb-bot", tag: "latest" }
           - { image: "nyanmisaka/jellyfin", tag: "latest" }
+          - { image: "openlistteam/openlist", tag: "latest" }
           - { image: "p3terx/aria2-pro", tag: "latest" }
           - { image: "p3terx/aria2-pro", tag: "test" }
           - { image: "p3terx/ariang", tag: "latest" }
@@ -116,16 +122,23 @@ jobs:
           - { image: "suwmlee/ikaros", tag: "latest" }
           - { image: "synctvorg/synctv", tag: "latest" }
           - { image: "synctvorg/synctv", tag: "main" }
-          - { image: "tinymediamanager/tinymediamanager", tag: "5.1.1" }
+          - { image: "tinymediamanager/tinymediamanager", tag: "5.1.7" }
           - { image: "tinymediamanager/tinymediamanager", tag: "latest" }
+          - { image: "vinlic/deepseek-free-api", tag: "latest" }
+          - { image: "vinlic/doubao-free-api", tag: "latest" }
+          - { image: "vinlic/glm-free-api", tag: "latest" }
+          - { image: "vinlic/jimeng-free-api", tag: "latest" }
+          - { image: "vinlic/kimi-free-api", tag: "latest" }
+          - { image: "vinlic/qwen-free-api", tag: "latest" }
           - { image: "whyour/qinglong", tag: "develop" }
           - { image: "whyour/qinglong", tag: "latest" }
           - { image: "wushuo894/ani-rss", tag: "latest" }
           - { image: "wushuo894/komga-cn", tag: "latest" }
           - { image: "wushuo894/komga-cn", tag: "test" }
+          - { image: "wyh3210277395/sehuatang-crawler", tag: "latest" }
           - { image: "xhofe/alist", tag: "beta" }
           - { image: "xhofe/alist", tag: "latest" }
-          - { image: "xhongc/music_tag_web", tag: "1.2.7" }
+          # - { image: "xhongc/music_tag_web", tag: "1.2.7" }
           - { image: "xhongc/music_tag_web", tag: "latest" }
           - { image: "xiaoyi510/xarr-rss", tag: "latest" }
           - { image: "xinjiawei1/emby_unlockd", tag: "beta" }
@@ -177,7 +190,7 @@ jobs:
           max_retries=3
           until [ $retry_count -ge $max_retries ]
           do
-            skopeo copy --all --authfile ${{ env.SKOPEO_AUTHFILE }} --src-tls-verify=false --dest-tls-verify=false --retry-times 5 --override-os linux --override-arch amd64 "docker://${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }}" "docker://${{ secrets.DOCKER_USER }}/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}'):${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.tag_last_pushed_date }}" && break
+            skopeo copy --all --authfile ${{ env.SKOPEO_AUTHFILE }} --src-tls-verify=false --dest-tls-verify=false --retry-times 5 --override-os linux --override-arch amd64 "docker://${{ matrix.image_tag.image }}:${{ matrix.image_tag.tag }}" "docker://${{ secrets.DOCKER_USER }}/$(echo "${{ matrix.image_tag.image }}" | awk -F/ '{print $NF}').$(echo "${{ matrix.image_tag.image }}" | awk '{sub(/ghcr.io\//, ""); sub(/\/[^\/]*$/, ""); print}'):${{ matrix.image_tag.tag }}-${{ steps.get-digest.outputs.last_updated }}" && break
             retry_count=$((retry_count+1))
             sleep $((RANDOM % 30))  # 随机退避
           done
