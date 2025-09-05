@@ -163,10 +163,11 @@ jobs:
             IMAGE_NAME="library/$IMAGE_NAME"
           fi
           # 获取 JWT Token
-          TOKEN=$(curl -s -u "${{ secrets.DOCKER_USER }}:${{ secrets.DOCKER_PWD }}" "https://hub.docker.com/v2/users/login/" | jq -r .token)
+          # TOKEN=$(curl -s -u "${{ secrets.DOCKER_USER }}:${{ secrets.DOCKER_PWD }}" "https://hub.docker.com/v2/users/login/" | jq -r .token)
           API_URL="https://hub.docker.com/v2/repositories/$IMAGE_NAME/tags/${{ matrix.image_tag.tag }}"
           echo "API_URL: $API_URL"
-          API_RESULT=$(curl -sLH "Authorization: JWT $TOKEN" $API_URL)
+          API_RESULT=$(curl -s $API_URL)
+          # API_RESULT=$(curl -sLH "Authorization: JWT $TOKEN" $API_URL)
           echo "API_RESULT: $API_RESULT"
           DIGEST=$(echo "$API_RESULT" | jq -r '.digest')
           echo "Digest is: $DIGEST"
