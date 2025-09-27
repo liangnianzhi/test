@@ -122,7 +122,7 @@ jobs:
           - { image: "suwmlee/ikaros", tag: "latest" }
           - { image: "synctvorg/synctv", tag: "latest" }
           - { image: "synctvorg/synctv", tag: "main" }
-          - { image: "tinymediamanager/tinymediamanager", tag: "5.1.7" }
+          # - { image: "tinymediamanager/tinymediamanager", tag: "5.1.7" }
           - { image: "tinymediamanager/tinymediamanager", tag: "latest" }
           - { image: "vinlic/deepseek-free-api", tag: "latest" }
           - { image: "vinlic/doubao-free-api", tag: "latest" }
@@ -136,6 +136,7 @@ jobs:
           - { image: "wushuo894/komga-cn", tag: "latest" }
           - { image: "wushuo894/komga-cn", tag: "test" }
           - { image: "wyh3210277395/sehuatang-crawler", tag: "latest" }
+          - { image: "wyh3210277395/magnetboard", tag: "latest" }
           - { image: "xhofe/alist", tag: "beta" }
           - { image: "xhofe/alist", tag: "latest" }
           # - { image: "xhongc/music_tag_web", tag: "1.2.7" }
