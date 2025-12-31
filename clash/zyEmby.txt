@@ -89,3 +89,12 @@ payload:
   - DOMAIN-SUFFIX,a3.handoumedia.top # 憨豆 A3线路
   - DOMAIN-SUFFIX,b1.handoumedia.top # 憨豆 B1线路
   - DOMAIN-SUFFIX,b2.handoumedia.top # 憨豆 B2线路
+  - DOMAIN-SUFFIX,emby.my # 月饼 主线路
+  - DOMAIN-SUFFIX,a.emby.my # 月饼 线路二
+  - DOMAIN-SUFFIX,lite.liminalnet.com # 临小境
+  - DOMAIN-SUFFIX,emby.violet.run # 紫罗兰 主线路  
+  - DOMAIN-SUFFIX,violetcdn.fufuemby.top # 紫罗兰 cdn直连
+  - DOMAIN-SUFFIX,cmcdn.fufuemby.top # 紫罗兰 电信cdn
+  - DOMAIN-SUFFIX,ctcdn.fufuemby.top # 紫罗兰 移动cdn
+  - DOMAIN-SUFFIX,cucdn.fufuemby.top # 紫罗兰 联通cdn
+  - DOMAIN-SUFFIX,46.3.109.178 # 紫罗兰 三网
