@@ -4,3 +4,4 @@ payload:
   - DOMAIN-SUFFIX,prestige-av.com
   - DOMAIN-SUFFIX,mgstage.com
   - DOMAIN-SUFFIX,faleno.jp
+  - DOMAIN-SUFFIX,c.emby.wtf
