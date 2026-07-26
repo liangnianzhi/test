@@ -9,7 +9,7 @@ payload:
   # - DOMAIN-SUFFIX,rjggbot.rjf37.com,🚀 直连  # 入境机器人签到
 
   - DOMAIN-SUFFIX,emby.bangumi.ca  # Nya伟大
-  # - DOMAIN-SUFFIX,cf.imetyou.top  # Paul, 暂时屏蔽大陆, 日本, 梯子
+  - DOMAIN-SUFFIX,cf.imetyou.top  # Paul, 暂时屏蔽大陆, 日本, 梯子
   - DOMAIN-SUFFIX,emby.pilipiliultra.com  # PiliPili-取消反代线路，仅主线路一条
   # - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
   # - DOMAIN-SUFFIX,pili.994959.xyz
