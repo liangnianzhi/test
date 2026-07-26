@@ -79,7 +79,7 @@ payload:
   - DOMAIN-SUFFIX,chilledmelon.com # 冰镇西瓜ChilledMelon(rn.|cloudf.|seoul.|sjc.|daigua.|mzlpin.|mr.)
   - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
   - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
-  # - DOMAIN-SUFFIX,emby.younoyes.com # Youno美西CF线路 别直连 必卡, 梯子
+  - DOMAIN-SUFFIX,emby.younoyes.com # Youno美西CF线路 别直连 必卡, 梯子
   # - DOMAIN-SUFFIX,jp.younoyes.com # Youno日本直连线路 12MiBps强限速 请勿长期占用带宽 感谢 无任何SLA, 直连
   # - DOMAIN-SUFFIX,us.younoyes.com # Youno美西直连线路 15MiBps强限速 请勿长期占用带宽 感谢 无任何SLA, 直连
   - DOMAIN-SUFFIX,emby.1l1.icu # Prejudice
