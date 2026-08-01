@@ -1,100 +1,47 @@
 payload:
 # Emby公益服
-  # - DOMAIN-SUFFIX,emby1.123456789.lol  # 影迹-倒闭
-  # - DOMAIN-SUFFIX,emby2.9900990.buzz
-  # - DOMAIN-SUFFIX,frre.me  # 猫眼-倒闭
-  # - DOMAIN-SUFFIX,cat-eye.top
-  # - DOMAIN-SUFFIX,rjf37.com  # 入机(rjcf.|rjhkgcp.|rjhk.)-倒闭
-  # - DOMAIN-SUFFIX,rjbot.rjf37.com,🚀 直连  # 入机机器人签到
-  # - DOMAIN-SUFFIX,rjggbot.rjf37.com,🚀 直连  # 入境机器人签到
-
-  - DOMAIN-SUFFIX,emby.bangumi.ca  # Nya伟大
+  - DOMAIN-SUFFIX,embymv.link  # Peach
+  - DOMAIN-SUFFIX,emby.nebula-media.org  # Nebula星空, 屏蔽大陆, 日本, 梯子
+  - DOMAIN-SUFFIX,cf.sfcj.org  # 非越 cf线路暂时不用梯子
+  - DOMAIN-SUFFIX,media.emby.pro  # 非越 推流线路代理
+  - DOMAIN-SUFFIX,test.28.al  # 起点
+  - DOMAIN-SUFFIX,v.chilledmelon.com  # 冰镇西瓜
+  - DOMAIN-SUFFIX,rn.chilledmelon.com  # 冰镇西瓜, 美西备用
+  - DOMAIN-SUFFIX,cf.697758.xyz  # 冰镇西瓜, 电信直连
+  - DOMAIN-SUFFIX,tanhuatv.site  # 探花
+  - DOMAIN-SUFFIX,emby.heisi.org  # 游骑兵
+  - DOMAIN-SUFFIX,emby666.alien666.de5.net  # 游骑兵, 备用
+  - DOMAIN-SUFFIX,cc.coemn.com  # Cc公益
+  - DOMAIN-SUFFIX,cc.mnyvc.xyz  # Cc公益, CF直连面板
+  - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP守候影院
+  - DOMAIN-SUFFIX,fych.feiyue.lol  # 飞跃彩虹
+  - DOMAIN-SUFFIX,emby.younoyes.com  # Youno
+  - DOMAIN-SUFFIX,emby.my  # 月饼
+  - DOMAIN-SUFFIX,a.emby.my  # 月饼 线路二
+  - DOMAIN-SUFFIX,m.wenjian.de  # 稳健
+  - DOMAIN-SUFFIX,a1.handoumedia.top  # 憨豆
+  # - DOMAIN-SUFFIX,cf.5msky.com  # MSKY
+  # - DOMAIN-SUFFIX,emby.feiniu.lol  # 肥牛, cf线路, 暂时不用梯子
+  # - DOMAIN-SUFFIX,misty.cx  # Misty, 屏蔽大陆, 梯子
+  # - DOMAIN-SUFFIX,jsq.vban.xyz  # 见手青
+  # - DOMAIN-SUFFIX,playz.mjji.de  # PlayZ无界云, 屏蔽大陆, 梯子
+  # - DOMAIN-SUFFIX,emby3.mcjoker.xyz  # 叔服
+  - DOMAIN-SUFFIX,emby.liminalnet.com  # 临境Liminal, 屏蔽大陆, 日本, 梯子
+  # - DOMAIN-SUFFIX,zoxfree.3767483.xyz  # ZoxFree(Zox公费服旗下公益服)
+  - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
+  - DOMAIN-SUFFIX,wp.lyezi.cc  # 叶子高码
+  - DOMAIN-SUFFIX,gy.meowfly.de  # 飞了个喵
+  - DOMAIN-SUFFIX,c.emby.wtf  # 终点站
   - DOMAIN-SUFFIX,cf.imetyou.top  # Paul, 暂时屏蔽大陆, 日本, 梯子
-  - DOMAIN-SUFFIX,emby.pilipiliultra.com  # PiliPili-取消反代线路，仅主线路一条
-  # - DOMAIN-SUFFIX,emby-direct.pilipiliultra.com
-  # - DOMAIN-SUFFIX,pili.994959.xyz
-  # - DOMAIN-SUFFIX,caddy.pilipili.me
-  # - DOMAIN-SUFFIX,vn.pili.im
-  - DOMAIN-SUFFIX,emby.wtf  # 终点站Terminus(pub1.|pub2.|pub3.)
+  - DOMAIN-SUFFIX,genshin.biliblili.uk  # PiliPili/结束乐队
+  - DOMAIN-SUFFIX,bilibili.43992026.xyz  # PiliPili/结束乐队, 电信
+  - DOMAIN-SUFFIX,onatoshi.114514.quest  # Doubon
+  - DOMAIN-SUFFIX,emby.bangumi.ca  # Nya伟大
   # - DOMAIN-SUFFIX,media.nijigem.by  # 二次元, 智能分流, 直连
   # - DOMAIN-SUFFIX,cdn.bgp.yt # 二次元其他线路(default.|ct.|us-w.|cu.|), 直连
-  - DOMAIN-SUFFIX,ch.feiyue.lol  # 飞越彩虹
-  - DOMAIN-SUFFIX,tanhuatv.site  # 探花TV
-  - DOMAIN-SUFFIX,hkb-emby.aliz.work  # HKB
-  - DOMAIN-SUFFIX,hka-emby3.aliz.work  # HKA
-  - DOMAIN-SUFFIX,plumber.nezhasu.com  # Plumber
-  - DOMAIN-SUFFIX,shouer.910427.xyz
-  - DOMAIN-SUFFIX,embymv.link  # Peach
-  - DOMAIN-SUFFIX,gy.meowfly.de  # 飞了个喵
-  # - DOMAIN-SUFFIX,pornemby.com  # Pornfans, 屏蔽大陆, 日本, 梯子
-  # - DOMAIN-SUFFIX,gongyi.daliziqielili.su  # Cherry, 屏蔽大陆, 梯子
-  - DOMAIN-SUFFIX,emby3.mcjoker.xyz  # 叔服
-  - DOMAIN-SUFFIX,emby.feiniu.lol  # 肥牛, cf线路, 暂时不用梯子
-  - DOMAIN-SUFFIX,pieclip.okbap.com  # 片刻影视解说
-  - DOMAIN-SUFFIX,c1.staryuki.me  # STAR EMBY1✨ CoverIP优化（跑路但暂可用）
-  - DOMAIN-SUFFIX,cf-star1.staryuki.me  # STAR EMBY1🌐 CloudFlare CDN
-  - DOMAIN-SUFFIX,eo-star.staryuki.com  # STAR EMBY1🌐 Tencent EdgeOne CDN
-  - DOMAIN-SUFFIX,de1.staryuki.me  # STAR EMBY1❇️ 德国反代
-  - DOMAIN-SUFFIX,s1.staryuki.me  # STAR EMBY1❇️ 英国原生线路 
-  - DOMAIN-SUFFIX,c2.staryuki.me  # STAR EMBY2✨ CoverIP优化（跑路但可用）
-  - DOMAIN-SUFFIX,de2.staryuki.me  # STAR EMBY2❇️ 德国反代
-  # - DOMAIN-SUFFIX,fast-1.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv4大陆&国际优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
-  # - DOMAIN-SUFFIX,fast-v6.staryuki.me.kiven.cc # STAR EMBY1❤️ IPv6直连优化线路（由蒸汽鸟报 (https://t.me/bzqsm)提供）, 直连
-  - DOMAIN-SUFFIX,emby.785858.xyz  # 萝卜
-  - DOMAIN-SUFFIX,rjggcf.rjf37.com  # 入境
-  # - DOMAIN-SUFFIX,playz.mjji.de  # PlayZ无界云, 屏蔽大陆, 梯子
-  - DOMAIN-SUFFIX,emby.pcmhub.org  # PCM爆米花
-  - DOMAIN-SUFFIX,free.28.al  # 起点
-  - DOMAIN-SUFFIX,cf.sfcj.org  # 非越 线路一, cf线路暂时不用梯子
-  - DOMAIN-SUFFIX,cdn.sfcj.org  # 非越 线路二, cdn线路应该是直连
-  - DOMAIN-SUFFIX,emby.wenjian.de  # 稳健Emby
-  - DOMAIN-SUFFIX,beebi.org  # BBemby
-  # - DOMAIN-SUFFIX,emby.nebula-media.org  # Nebula星空, 屏蔽大陆, 日本, 梯子
-  # - DOMAIN-SUFFIX,emby.liminalnet.com  # 临境Liminal, 屏蔽大陆, 日本, 梯子
-  - DOMAIN-SUFFIX,edge.staryuki.me  # STAR EMBY3-Edge of Darkness测试服
-  # - DOMAIN-SUFFIX,ciallo.party  # 105°兔子服, 屏蔽大陆, 日本, 梯子
-  - DOMAIN-SUFFIX,tufei.de  # 土匪Max
-  - DOMAIN-SUFFIX,5msky.com  # MSKY
-  - DOMAIN-SUFFIX,kessoku-bando.biliblili.uk  # 結束バンド(原牢大野兽餐厅已转私)
-  - DOMAIN-SUFFIX,zoxfree.3767483.xyz  # ZoxFree(Zox公费服旗下公益服)
-  - DOMAIN-SUFFIX,emby.heisi.org  # 游骑兵(银河MJJ)
-  - DOMAIN-SUFFIX,emby.zn.al  # Emby存档服-Zn的影视库
-  # - DOMAIN-SUFFIX,cf.yunti.online  # 云云Emby-电视剧、综艺、动漫等, 屏蔽大陆, 日本, 梯子
-  # - DOMAIN-SUFFIX,emby2.yunti.online  # 云云Emby-电影库, 屏蔽大陆, 日本, 梯子
-  - DOMAIN-SUFFIX,nubebelle.vip  # 云幕NubeBelle, 目前为删档公测期间(emby.|emby-a.|emby-b.|emby-c.|emby-sg.)
-  - DOMAIN-SUFFIX,emby.nubebelle.cn
-  - DOMAIN-SUFFIX,cc.coemn.com  # Cc公益
-  - DOMAIN-SUFFIX,onatoshi.114514.quest  # Doubon
-  - DOMAIN-SUFFIX,kfc.v50.su  # KFC疯狂星期四(哪吒云)V4直连线路, 直连
-  - DOMAIN-SUFFIX,emby.v50.su  # KFC疯狂星期四(哪吒云)V6直连线路, 直连
-  - DOMAIN-SUFFIX,cloudflare.v50.su  # KFC疯狂星期四(哪吒云)CloudFlare加速线路
-  - DOMAIN-SUFFIX,cdn.v50.su  # KFC疯狂星期四(哪吒云)野鸡CDN线路
-  - DOMAIN-SUFFIX,gm.yezi.my  # 叶子高码
-  - DOMAIN-SUFFIX,qqpyf.top  # 高清剧集网-https://totoro.im/thread-662.htm
-  - DOMAIN-SUFFIX,dongman.theluyuan.com  # theluyuan-linux.do分享
-  - DOMAIN-SUFFIX,jsq.vban.xyz  # 见手青
-  # - DOMAIN-SUFFIX,misty.cx  # Misty, 屏蔽大陆, 梯子
-  # - DOMAIN-SUFFIX,lite.cn2gias.uk  # SNTP Media Lite-守候影院 主线路-V4, 屏蔽大陆, 梯子
-  # - DOMAIN-SUFFIX,lite-v6.cn2gias.uk  # SNTP Media Lite-守候影院 主线路-V6, 屏蔽大陆, 梯子
-  - DOMAIN-SUFFIX,chilledmelon.com # 冰镇西瓜ChilledMelon(rn.|cloudf.|seoul.|sjc.|daigua.|mzlpin.|mr.)
-  - DOMAIN-SUFFIX,us.nanflix.net # Nanflix南飞
-  - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
-  - DOMAIN-SUFFIX,emby.younoyes.com # Youno美西CF线路 别直连 必卡, 梯子
-  # - DOMAIN-SUFFIX,jp.younoyes.com # Youno日本直连线路 12MiBps强限速 请勿长期占用带宽 感谢 无任何SLA, 直连
-  # - DOMAIN-SUFFIX,us.younoyes.com # Youno美西直连线路 15MiBps强限速 请勿长期占用带宽 感谢 无任何SLA, 直连
-  - DOMAIN-SUFFIX,emby.1l1.icu # Prejudice
+  - DOMAIN-SUFFIX,ciallo.party  # 银河列车, 屏蔽大陆, 日本
+  - DOMAIN-SUFFIX,yuanshen.help  # 银河列车, 副线路
   - DOMAIN-SUFFIX,emby.hohai.eu.org # HOUHAI
-  - DOMAIN-SUFFIX,a1.handoumedia.top # 憨豆 A1线路
-  - DOMAIN-SUFFIX,a2.handoumedia.top # 憨豆 A2线路
-  - DOMAIN-SUFFIX,a3.handoumedia.top # 憨豆 A3线路
-  - DOMAIN-SUFFIX,b1.handoumedia.top # 憨豆 B1线路
-  - DOMAIN-SUFFIX,b2.handoumedia.top # 憨豆 B2线路
-  - DOMAIN-SUFFIX,emby.my # 月饼 主线路
-  - DOMAIN-SUFFIX,a.emby.my # 月饼 线路二
-  - DOMAIN-SUFFIX,lite.liminalnet.com # 临小境
-  - DOMAIN-SUFFIX,emby.violet.run # 紫罗兰 主线路  
-  - DOMAIN-SUFFIX,violetcdn.fufuemby.top # 紫罗兰 cdn直连
-  - DOMAIN-SUFFIX,cmcdn.fufuemby.top # 紫罗兰 电信cdn
-  - DOMAIN-SUFFIX,ctcdn.fufuemby.top # 紫罗兰 移动cdn
-  - DOMAIN-SUFFIX,cucdn.fufuemby.top # 紫罗兰 联通cdn
-  - DOMAIN-SUFFIX,46.3.109.178 # 紫罗兰 三网
+  - DOMAIN-SUFFIX,pieclip.okbap.com  # 片刻影视解说
+  # - DOMAIN-SUFFIX,pornemby.com  # Pornfans, 屏蔽大陆, 日本, 梯子
+  # - DOMAIN-SUFFIX,daliziqielili.su  # Cherry, 屏蔽大陆, 梯子
