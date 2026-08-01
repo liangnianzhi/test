@@ -16,3 +16,5 @@ payload:
   - DOMAIN-SUFFIX,claude.ai  # Web 服务
   - DOMAIN-SUFFIX,api.anthropic.com  # API 入口
   - DOMAIN-SUFFIX,console.anthropic.com  # 管理台
+# Emby
+  - DOMAIN-SUFFIX,c.emby.wtf  # 终点站
