@@ -31,7 +31,6 @@ payload:
   - DOMAIN-SUFFIX,public.shrekmedia.org # Shrek
   - DOMAIN-SUFFIX,wp.lyezi.cc  # 叶子高码
   - DOMAIN-SUFFIX,gy.meowfly.de  # 飞了个喵
-  - DOMAIN-SUFFIX,c.emby.wtf  # 终点站
   - DOMAIN-SUFFIX,cf.imetyou.top  # Paul, 暂时屏蔽大陆, 日本, 梯子
   - DOMAIN-SUFFIX,genshin.biliblili.uk  # PiliPili/结束乐队
   - DOMAIN-SUFFIX,bilibili.43992026.xyz  # PiliPili/结束乐队, 电信
