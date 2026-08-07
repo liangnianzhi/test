@@ -6,6 +6,7 @@ payload:
 # 其他
   # - DOMAIN-SUFFIX,x999x.me  # x99x
   # - DOMAIN-SUFFIX,18comic.vip  # 禁漫天堂
+  - DOMAIN-SUFFIX,et.net # easytier虚拟组网魔法DNS后缀, <hostname>.et.net为域名
 # PT站
   - DOMAIN-SUFFIX,1ptba.com  # 1pt
   - DOMAIN-SUFFIX,52pt.site  # 52PT
