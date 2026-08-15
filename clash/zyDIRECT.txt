@@ -7,6 +7,7 @@ payload:
   # - DOMAIN-SUFFIX,x999x.me  # x99x
   # - DOMAIN-SUFFIX,18comic.vip  # 禁漫天堂
   - DOMAIN-SUFFIX,cnlang.org  # 国语视界论坛
+  - DOMAIN-SUFFIX,et.net  # easytier组网魔法DNS
 # PT站
   - DOMAIN-SUFFIX,1ptba.com  # 1pt
   - DOMAIN-SUFFIX,52pt.site  # 52PT
