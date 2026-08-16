@@ -1,0 +1,13 @@
+name: Clone Releases
+on:
+  workflow_dispatch:
+jobs:
+  clone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run clone action
+        uses: andrewthetechie/gha-clone-releases@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          src_repo: "源仓库所有者/源仓库名"
+          copy_assets: true # 设置为true以复制Release附件
