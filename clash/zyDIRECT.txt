@@ -61,6 +61,7 @@ payload:
   - DOMAIN-SUFFIX,kamept.com  # 龟
   - DOMAIN-SUFFIX,www.nicept.net  # 老师
   # - DOMAIN-SUFFIX,bitporn.eu  # BitPorn
+  - DOMAIN-SUFFIX,hhanclub.net  # 憨憨
 # Emby公益服
   - DOMAIN-SUFFIX,music.mefun.org  # 未响音乐服
   - DOMAIN-SUFFIX,music.wenjian.de  # 稳健音乐服
